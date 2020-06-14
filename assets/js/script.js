@@ -3,14 +3,18 @@ setTimeout(function() {
     $(".fade").fadeOut("fast");
 }, 350);
 
-$(".light-h3").hover(function(){
-  $(this).css("background-color", "grey" + "color", "white");
+$(".light-container").hover(function(){
+  $(this).css("background-color", "grey" + "color", "white");  
+  $(".blue-saber").css("visibility", "visible");
   }, function(){
   $(this).css("background-color", "transparent" + "color", "blue");
+  $(".blue-saber").css("visibility","hidden");
 });
 
-$(".light-h3").hover(function(){
-  $(".blue-saber").css("visibility", "");
+$(".dark-container").hover(function(){
+  $(".red-saber").css("visibility", "visible");
+  $(this).css("background-color", "grey" + "color", "white");
   }, function(){
-  $(".blue-saber").css("visibility","hidden");
+  $(".red-saber").css("visibility","hidden");
+  $(this).css("background-color", "transparent" + "color", "red");
 });
