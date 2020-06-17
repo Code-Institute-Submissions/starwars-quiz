@@ -5,3 +5,7 @@
 #score-container {
     display: none;
 }
+
+#start i {
+    color: red;
+}
