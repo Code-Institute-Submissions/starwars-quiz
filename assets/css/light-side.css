@@ -1,5 +1,29 @@
+body {
+    background-color: black;
+}
+
+#start-container {
+    width: 100%;
+    text-align: center;
+}
+
+#start {
+    background-color: yellow;
+    display: block;
+    height: 300px;
+    width: 300px;
+}
+
 #quiz {
     display: none;
+    text-align: center;
+    color: yellow;
+}
+
+#quest-img {
+    display: block;
+    height: 300px;
+    width: auto;
 }
 
 #score-container {

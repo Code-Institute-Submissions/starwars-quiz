@@ -23,7 +23,8 @@ let questions = [
         optionB: "Tatooine",
         optionC: "Alderaan",
         optionD: "Kamino",
-        correct: "C"
+        correct: "C",
+        icon: document.getElementById("icon1")
     },
     {
         question: "What was the name of Emporer Palpatines master?",
@@ -32,7 +33,8 @@ let questions = [
         optionB: "Darth Plaggmis",
         optionC: "Darth Tyranus",
         optionD: "Darth Tiryan",
-        correct: "A"
+        correct: "A",
+        icon: document.getElementById("icon2")
     },
     {
         question: "Which species stole the plans to the Death Star?",
@@ -129,13 +131,14 @@ function progressStructure() {
 };
 
 function correctAnswer() {
-    let icon = document.getElementsByClassName("fas");
-    $(icon).css("color", "blue");
+    let qIcon = currentQuestion.icon;
+    $(qIcon).css("color", "blue");
+    console.log();
 };
 
 function wrongAnswer() {
-    let icon = document.getElementsByClassName("fas");
-    $(icon).css("color", "red");
+    let qIcon = currentQuestion.icon;
+    $(qIcon).css("color", "red");
 };
 
 const questTimeLimit = 0;
@@ -150,8 +153,8 @@ function counterStructure() {
     } else {
         count = 20;
         wrongAnswer();
-        if(currentquestion < lastQuestion) {
-            currentquestion++;
+        if(currentQuestion < lastQuestion) {
+            currentQuestion++;
             questionStructure();
         } else {
             clearInterval(countTimer);
@@ -191,11 +194,11 @@ $(start).click(function() {
 function scoreStructure() {
     let scoreContainer = document.getElementById("score-container");
     let scorePercentage = Math.round(100 * score / questions.length) + "%";
-    let img = (scorePercentage == 100) ? "assets/images/6.png":
-              (scorePercentage >= 85) ? "assets/images/5.png":
-              (scorePercentage >= 70) ? "assets/images/4.png":
-              (scorePercentage >= 50) ? "assets/images/3.png":
-              (scorePercentage >= 30) ? "assets/images/2.png": "assets/images/worst.jpg";
+    let img = (scorePercentage == 100) ? "assets/images/smart.jpg":
+              (scorePercentage >= 85) ? "assets/images/good.jpg":
+              (scorePercentage >= 70) ? "assets/images/mace.jpeg":
+              (scorePercentage >= 50) ? "assets/images/average.jpeg":
+              (scorePercentage >= 30) ? "assets/images/bad.jpeg": "assets/images/worst.jpg";
     $(scoreContainer).css("display", "block");
     scoreContainer.innerHTML = "<img src=" + img + "><p>" + scorePercentage + "</p>";
 
