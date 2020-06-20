@@ -5,31 +5,110 @@ body {
 #start-container {
     width: 100%;
     text-align: center;
+    padding-top: 30vh;
 }
 
 #start {
-    background-color: yellow;
-    display: block;
-    height: 300px;
-    width: 300px;
+    background-color: #feda4a;
+    height: 22vw;
+    width: 30vw;
+}
+
+#start h1 {
+    font-size: 4vw;
+    font-family: "Staatliches", cursive;
 }
 
 #quiz {
     display: none;
     text-align: center;
-    color: yellow;
+    color: #feda4a;
+}
+
+#quest-img-container {
+    text-align: center;
+    border: solid 5px;
+    width: 100%;
+    height: 40vh;
 }
 
 #quest-img {
-    display: block;
-    height: 300px;
     width: auto;
+    height: 38vh;
+    text-align: center;
+    padding-top: 1vh;
+}
+
+#quest-img img {
+    width: auto;
+    height: 36vh;
+    text-align: center;
+}
+
+#question {
+    width: 100%;
+    text-align: center;
+}
+
+#question p {
+    font-size: 3vw;
+    width: 100%;
+    height: 15vh;
+    border: solid 5px;
+    font-family: "Staatliches", cursive;
+}
+
+
+
+#options {
+    font-size: 3vw;
+    width: 100%;
+    height: 30vh;
+    border: solid 5px;
+    font-family: "Staatliches", cursive;
+}
+
+#a {
+    border: solid 3px;
+    width: 49vw;
+    height: 14vh;
+}
+#b {
+    border: solid 3px;
+    width: 49vw;
+    height: 14vh;
+    float: right;
+}
+#c {
+    border: solid 3px;
+    width: 49vw;
+    height: 14vh;
+}
+#d {
+    border: solid 3px;
+    width: 49vw;
+    height: 14vh;
+    float: right;
 }
 
 #score-container {
     display: none;
+    padding-top: 8vw;
+}
+
+#score-container img {
+    width: 60vw;
+}
+
+#score-container p {
+    font-size: 4vw;
 }
 
 #start i {
     color: red;
+}
+
+.progr {
+    color: #ffffff;
+    font-size: 30px;
 }

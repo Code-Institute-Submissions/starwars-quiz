@@ -3,6 +3,10 @@ setTimeout(function() {
     $(".fade").fadeOut("fast");
 }, 350);
 
+setTimeout(function() {
+    $(".selection-heading").fadeIn("fast");
+}, 350);
+
 $(".light-side").hover(function(){
   $(".blue-saber").css("visibility", "visible");
   }, function(){
