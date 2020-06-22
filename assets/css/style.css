@@ -88,13 +88,14 @@ body {
 
 #side-option {
   font-size: 50px;
-  width: 100%;
+  min-width: 100%;
   padding: 0;
   margin: 0;
 }
 
 .b-saber-container {
     text-align: right;
+    margin-top: 1vh;
 }
 
 .blue-saber {
@@ -104,25 +105,27 @@ body {
 }
 
 .light-button-container {
-  text-align: right;
+  text-align: left;
   width: 12.5vw;
+  height: 5vh;
+  margin-top: 4vh;
 }
 
 .light-side {
   font-size: 1.8vw;
   width: 12vw;
-  margin-right: 0.5vw;
 }
 
 .dark-button-container {
-  text-align: left;
+  text-align: right;
   width: 12.5vw;
+  height: 5vh;
+  margin-top: 4vh;
 }
 
 .dark-side {
   font-size: 1.8vw;
   width: 12vw;
-  margin-left: 0.5vw;
 }
 
 .r-saber-container {
@@ -144,4 +147,85 @@ body {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
+}
+
+@media (max-width: 1000px) {
+  #side-option {
+      display: none;
+  }
+  .small-container {
+      min-width: 100%;
+      margin: 0;
+  }
+  .sm-light-button-container {
+      text-align: right;
+      width: 20vw;
+      height: auto;
+      padding: 0 0.5vw 10vh 0;
+  }
+  .sm-light-side {
+      font-size: 3vw;
+      width: 20vw;
+  }
+  .sm-dark-button-container {
+      text-align: left;
+      width: 20vw;
+      height: auto;
+      padding: 0 0 10vh 0.5vw;
+  }
+  .sm-dark-side {
+      font-size: 3vw;
+      width: 20vw;
+  }
+}
+
+@media (max-width: 700px) {
+  #side-option {
+      display: none;
+  }
+  .small-container {
+      min-width: 100%;
+      margin: 0;
+  }
+  .sm-light-button-container {
+      text-align: right;
+      width: 40vw;
+      height: auto;
+      padding: 0 0.5vw 10vh 0;
+  }
+  .sm-light-side {
+      font-size: 6vw;
+      width: 40vw;
+  }
+  .sm-dark-button-container {
+      text-align: left;
+      width: 40vw;
+      height: auto;
+      padding: 0 0 10vh 0.5vw;
+  }
+  .sm-dark-side {
+      font-size: 6vw;
+      width: 40vw;
+  }
+  .heading-container h2 {
+  font-size: 6vw;
+  }
+  #head-logo {
+  width: 80vw;
+}
+}
+
+@media (min-width: 1000px) {
+  .sm-light-button-container {
+      display: none;
+  }
+  .sm-light-side {
+      display: none;
+  }
+  .sm-dark-button-container {
+      display: none;
+  }
+  .sm-dark-side {
+      display: none;
+  }
 }
