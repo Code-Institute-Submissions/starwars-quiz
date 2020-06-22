@@ -1,114 +1,312 @@
 body {
-    background-color: black;
+  background-color: black;
 }
 
 #start-container {
-    width: 100%;
-    text-align: center;
-    padding-top: 30vh;
+  width: 100%;
+  text-align: center;
+  padding-top: 30vh;
 }
 
 #start {
-    background-color: #feda4a;
-    height: 22vw;
-    width: 30vw;
+  background-color: #feda4a;
+  height: 22vw;
+  width: 30vw;
 }
 
 #start h1 {
-    font-size: 4vw;
-    font-family: "Staatliches", cursive;
+  font-size: 4vw;
+  font-family: "Staatliches", cursive;
 }
 
 #quiz {
-    display: none;
-    text-align: center;
-    color: #feda4a;
+  display: none;
+  text-align: center;
+  color: #feda4a;
 }
 
 #quest-img-container {
-    text-align: center;
-    border: solid 5px;
-    width: 100%;
-    height: 40vh;
+  text-align: center;
+  border: solid 5px;
+  width: 100%;
+  height: 40vh;
 }
 
 #quest-img {
-    width: auto;
-    height: 38vh;
-    text-align: center;
-    padding-top: 1vh;
+  width: auto;
+  height: 38vh;
+  text-align: center;
+  padding-top: 1vh;
 }
 
 #quest-img img {
-    width: auto;
-    height: 36vh;
-    text-align: center;
+  width: auto;
+  height: 36vh;
+  text-align: center;
 }
 
 #question {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
-#question p {
+@media (min-width: 1000px) {
+  #question p {
     font-size: 3vw;
     width: 100%;
     height: 15vh;
     border: solid 5px;
     font-family: "Staatliches", cursive;
-}
+    margin: 0;
+  }
 
-
-
-#options {
+  #options {
     font-size: 3vw;
     width: 100%;
     height: 30vh;
     border: solid 5px;
     font-family: "Staatliches", cursive;
-}
+  }
 
-#a {
+  #a {
     border: solid 3px;
     width: 49vw;
-    height: 14vh;
-}
-#b {
+    height: 14.6vh;
+  }
+  #b {
     border: solid 3px;
     width: 49vw;
-    height: 14vh;
+    height: 14.6vh;
     float: right;
-}
-#c {
+  }
+  #c {
     border: solid 3px;
     width: 49vw;
-    height: 14vh;
-}
-#d {
+    height: 14.6vh;
+  }
+  #d {
     border: solid 3px;
     width: 49vw;
-    height: 14vh;
+    height: 14.6vh;
     float: right;
+  }
+  #counter {
+    font-size: 3vw;
+    font-family: "Staatliches", cursive;
+  }
 }
 
 #score-container {
-    display: none;
-    padding-top: 8vw;
+  display: none;
+  padding-top: 8vw;
 }
 
 #score-container img {
-    width: 60vw;
+  width: 60vw;
 }
 
 #score-container p {
-    font-size: 4vw;
+  font-size: 4vw;
+  font-family: "Staatliches", cursive;
 }
 
 #start i {
-    color: red;
+  color: red;
 }
 
 .progr {
-    color: #ffffff;
-    font-size: 30px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+/*---------Below-1000-px-------*/
+
+@media (max-width: 1000px) {
+  #question p {
+    font-size: 3.3vw;
+    width: 100%;
+    height: auto;
+    border: solid 5px;
+    font-family: "Staatliches", cursive;
+    margin: 0;
+  }
+
+  #options {
+    font-size: 3.5vw;
+    width: 100%;
+    height: auto;
+    border: solid 5px;
+    font-family: "Staatliches", cursive;
+    text-align: center;
+  }
+
+  #a {
+    border: solid 3px;
+    width: 100%;
+    height: 8vh;
+  }
+  #b {
+    border: solid 3px;
+    width: 100%;
+    height: 8vh;
+  }
+  #c {
+    border: solid 3px;
+    width: 100%;
+    height: 8vh;
+  }
+  #d {
+    border: solid 3px;
+    width: 100%;
+    height: 8vh;
+  }
+  #counter {
+    font-size: 3.5vw;
+    font-family: "Staatliches", cursive;
+  }
+  #score-container p {
+  font-size: 6vw;
+  font-family: "Staatliches", cursive;
+}
+}
+
+/*---------Below-760-px-------*/
+
+@media (max-width: 760px) {
+  #start {
+    height: 40vw;
+    width: 50vw;
+  }
+  #start h1 {
+  font-size: 7vw;
+}
+  #question p {
+    font-size: 4.2vw;
+    width: 100%;
+    height: auto;
+    border: solid 5px;
+    font-family: "Staatliches", cursive;
+  }
+
+  #options {
+    font-size: 4.3vw;
+    width: 100%;
+    height: auto;
+    border: solid 5px;
+    font-family: "Staatliches", cursive;
+    text-align: center;
+  }
+
+  #a {
+    border: solid 3px;
+    width: 100%;
+    height: auto;
+  }
+  #b {
+    border: solid 3px;
+    width: 100%;
+    height: auto;
+  }
+  #c {
+    border: solid 3px;
+    width: 100%;
+    height: auto;
+  }
+  #d {
+    border: solid 3px;
+    width: 100%;
+    height: auto;
+  }
+  #counter {
+    font-size: 4.5vw;
+    font-family: "Staatliches", cursive;
+  }
+}
+
+/*---------Below-610-px-------*/
+
+@media (max-width: 610px) {
+  #question p {
+    font-size: 5vw;
+  }
+  #options {
+    font-size: 5vw;
+  }
+  #score-container img {
+    width: 90%;
+  }
+
+  #score-container p {
+    font-size: 7vw;
+  }
+  #counter {
+    font-size: 5vw;
+  }
+}
+
+/*---------Below-550-px-------*/
+
+@media (max-width: 550px) {
+  #question p {
+    font-size: 5.5vw;
+  }
+  #options {
+    font-size: 5.5vw;
+  }
+  #score-container img {
+    width: 90%;
+  }
+
+  #score-container p {
+    font-size: 7vw;
+  }
+}
+
+/*---------Below-480-px-------*/
+
+@media (max-width: 480px) {
+  #question p {
+    font-size: 5.5vw;
+    width: 100%;
+    height: auto;
+    border: solid 5px;
+    font-family: "Comfortaa", cursive;
+  }
+
+  #options {
+    font-size: 5.5vw;
+    width: 100%;
+    height: auto;
+    border: solid 5px;
+    font-family: "Comfortaa", cursive;
+    text-align: center;
+  }
+
+  #a {
+    border: solid 3px;
+    width: 100%;
+    height: auto;
+  }
+  #b {
+    border: solid 3px;
+    width: 100%;
+    height: auto;
+  }
+  #c {
+    border: solid 3px;
+    width: 100%;
+    height: auto;
+  }
+  #d {
+    border: solid 3px;
+    width: 100%;
+    height: auto;
+  }
+  #counter {
+    font-size: 5.5vw;
+    font-family: "Comfortaa", cursive;
+  }
+  #score-container p {
+    font-size: 8vw;
+  }
 }

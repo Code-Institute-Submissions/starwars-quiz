@@ -211,7 +211,7 @@ function scoreStructure() {
     } else if(score >= 7) {var img = "assets/images/mace.jpeg"
     } else if(score >= 5) {var img = "assets/images/average.jpeg"
     } else if(score >= 3) {var img = "assets/images/bad.jpeg"
-    } else if(score >= 1) {var img = "assets/images/worst.jpg"};
+    } else if(score >= 0) {var img = "assets/images/worst.jpg"};
     $(scoreContainer).css("display", "block");
     $(scoreContainer).html("<p>You are.....</p><img src=" + img + "><p>" + scorePercentage + "</p>");
 };

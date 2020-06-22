@@ -86,52 +86,62 @@ body {
   color: #ffffff;
 }
 
-.side-option {
+#side-option {
   font-size: 50px;
   width: 100%;
-}
-.light-container {
-  display: inline;
-  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .b-saber-container {
-    display: inline;
+    text-align: right;
 }
 
 .blue-saber {
-  width: 40vw;
+  width: 30vw;
   height: auto;
   visibility: hidden;
 }
+
 .light-button-container {
-  position: fixed;
-  display: inline;
+  text-align: right;
+  width: 12.5vw;
 }
+
 .light-side {
   font-size: 1.8vw;
   width: 12vw;
+  margin-right: 0.5vw;
 }
-.dark-container {
-    display: inline;
-}
+
 .dark-button-container {
-  display: inline;
-  position: fixed;
-  padding-left: 13vw;
+  text-align: left;
+  width: 12.5vw;
 }
+
 .dark-side {
   font-size: 1.8vw;
   width: 12vw;
+  margin-left: 0.5vw;
 }
 
 .r-saber-container {
-    display: inline;
-    padding-left: 19vw;
+    text-align: left;
 }
 
 .red-saber {
-  width: 40vw;
+  width: 30vw;
   height: auto;
   visibility: hidden;
+}
+
+.col {
+    padding: 0;
+}
+
+.container {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }

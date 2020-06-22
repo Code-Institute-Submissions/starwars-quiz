@@ -10,7 +10,7 @@
       type="text/css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Staatliches&display=swap"
       rel="stylesheet"
     />
     <link
@@ -28,27 +28,45 @@
   </head>
 
   <body>
-    <div id="start-container"><button id="start"><h1>May the force be with you</h1></button></div>
+    <div id="start-container">
+      <button id="start"><h1>May the force be with you</h1></button>
+    </div>
     <div id="quiz">
-     <div id="main-quiz">
-      <div id="quest-img-container"><div id="quest-img"><img src="#" /></div></div>
-      <div id="question"><p>Question</p></div>
-      <div id="options">
-        <div class="option" id="a" onclick="checkAnswer('A')">A</div>
-        <div class="option" id="b" onclick="checkAnswer('B')">B</div>
-        <div class="option" id="c" onclick="checkAnswer('C')">C</div>
-        <div class="option" id="d" onclick="checkAnswer('D')">D</div>
+      <div id="main-quiz">
+        <div id="quest-img-container">
+          <div id="quest-img"><img src="#" /></div>
+        </div>
+        <div id="question"><p>Question</p></div>
+        <div id="options">
+          <div class="option" id="a" onclick="checkAnswer('A')">A</div>
+          <div class="option" id="b" onclick="checkAnswer('B')">B</div>
+          <div class="option" id="c" onclick="checkAnswer('C')">C</div>
+          <div class="option" id="d" onclick="checkAnswer('D')">D</div>
+        </div>
+        <div id="timer">
+          <div id="counter">20</div>
+        </div>
+        <div id="progress">
+          <div class="progr">
+            <i id="icon1" class="fas fa-jedi"></i
+            ><i id="icon2" class="fas fa-jedi"></i
+            ><i id="icon3" class="fas fa-jedi"></i
+            ><i id="icon4" class="fas fa-jedi"></i
+            ><i id="icon5" class="fas fa-jedi"></i
+            ><i id="icon6" class="fas fa-jedi"></i
+            ><i id="icon7" class="fas fa-jedi"></i
+            ><i id="icon8" class="fas fa-jedi"></i
+            ><i id="icon9" class="fas fa-jedi"></i
+            ><i id="icon10" class="fas fa-jedi"></i>
+          </div>
+        </div>
       </div>
-      <div id="timer">
-        <div id="counter">20</div>
-      </div>
-      <div id="progress">
-        <div class="progr"><i id="icon1" class="fas fa-jedi"></i><i id="icon2" class="fas fa-jedi"></i><i id="icon3" class="fas fa-jedi"></i><i id="icon4" class="fas fa-jedi"></i><i id="icon5" class="fas fa-jedi"></i><i id="icon6" class="fas fa-jedi"></i><i id="icon7" class="fas fa-jedi"></i><i id="icon8" class="fas fa-jedi"></i><i id="icon9" class="fas fa-jedi"></i><i id="icon10" class="fas fa-jedi"></i></div>
-      </div>
-     </div> 
       <div id="score-container"></div>
     </div>
-    <script src="https://kit.fontawesome.com/c758990a97.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c758990a97.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="assets/js/light-quiz.js"></script>
   </body>
