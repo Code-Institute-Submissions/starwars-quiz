@@ -120,6 +120,17 @@ let questions = [
     },
 ];
 
+$(document).ready(function(){
+    $("#start").hover(function(){
+        $(this).css("background-color", "blue");
+        $(this).css("color", "white");
+    },
+    function(){
+        $(this).css("background-color", "#feda4a");
+        $(this).css("color", "black");
+    });
+});
+
 let lastQuestion = questions.length - 1;
 let currentQuestion = 0;
 
