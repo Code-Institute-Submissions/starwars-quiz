@@ -49,7 +49,7 @@ let questions = [
         icon: document.getElementById("icon3")
     },
     {
-        question: "What odds does C-3P0 give Han for successfully navigating the asteroid field??",
+        question: "What odds does C-3P0 give Han for successfully navigating the asteroid field?",
         imgSrc: "assets/images/3po-mil.jpg",
         optionA: "370 to 1",
         optionB: "327,000 to 1",
