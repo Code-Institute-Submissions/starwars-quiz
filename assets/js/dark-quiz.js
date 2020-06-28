@@ -20,7 +20,7 @@ const progress = document.getElementById("progress");
 let questions = [
     {
         question: "What was the name of Emporer Palpatines master?",
-        imgSrc: "#",
+        imgSrc: "assets/images/plag.jpg",
         optionA: "Darth Plagueis",
         optionB: "Darth Plaggmis",
         optionC: "Darth Tyranus",
@@ -40,7 +40,7 @@ let questions = [
     },
     {
         question: "What was Darth Sidious' first name?",
-        imgSrc: "assets/images/d-plans.png",
+        imgSrc: "assets/images/palps.jpg",
         optionA: "Baaril",
         optionB: "Heeken",
         optionC: "Reeva",
@@ -60,7 +60,7 @@ let questions = [
     },
     {
         question: "What species is General Grievous?",
-        imgSrc: "assets/images/obi-fall.png",
+        imgSrc: "assets/images/grevy.jpg",
         optionA: "Yuzzum",
         optionB: "Kaleesh",
         optionC: "Chagrian",
@@ -69,8 +69,8 @@ let questions = [
         icon: document.getElementById("icon5")
     },
     {
-        question: "What is a name of a sith homeworld?",
-        imgSrc: "assets/images/luke-pc.jpg",
+        question: "Which of these is a sith homeworld?",
+        imgSrc: "assets/images/sith-home.jpg",
         optionA: "Dantooine",
         optionB: "Dathomir",
         optionC: "Jedha",
@@ -80,7 +80,7 @@ let questions = [
     },
     {
         question: "Give the SITH name of this character?",
-        imgSrc: "assets/images/medi.png",
+        imgSrc: "assets/images/count-d.jpeg",
         optionA: "Count Douku",
         optionB: "Darth Bane",
         optionC: "Darth Revan",
@@ -90,7 +90,7 @@ let questions = [
     },
     {
         question: "Out of these ships, which was the biggest?",
-        imgSrc: "assets/images/unky.jpg",
+        imgSrc: "assets/images/star-d.jpeg",
         optionA: "Executor-class Star Destroyer",
         optionB: "Imperial-class Star Destroyer",
         optionC: "Harrower-class dreadnought",
@@ -99,22 +99,22 @@ let questions = [
         icon: document.getElementById("icon8")
     },
     {
-        question: "Who says the line 'Your focus determines your reality'?",
-        imgSrc: "assets/images/luke-rey.jpg",
-        optionA: "Obi-wan Kenobi",
-        optionB: "Luke Skywalker",
-        optionC: "Qui-Gon Jinn",
-        optionD: "Mace Windu",
+        question: "Who was the original commander of the Death Star?",
+        imgSrc: "assets/images/d-plans.png",
+        optionA: "Darth Vader",
+        optionB: "Grand Admiral Thrawn",
+        optionC: "Grand Moff Tarkin",
+        optionD: "General Hux",
         correct: "C",
         icon: document.getElementById("icon9")
     },
     {
-        question: "Finish this line... 'Why, you stuck-up, half-witted, scruffy-looking........!?'",
-        imgSrc: "assets/images/leia.jpg",
-        optionA: "bantha fodder",
-        optionB: "nerf herder",
-        optionC: "no-wood swindler",
-        optionD: "buckethead",
+        question: "Finish this line... 'Be careful not to choke on........!?'",
+        imgSrc: "assets/images/dv.jpg",
+        optionA: "your ego",
+        optionB: "your aspirations",
+        optionC: "your overconfidence",
+        optionD: "your dreams",
         correct: "B",
         icon: document.getElementById("icon10")
     },
