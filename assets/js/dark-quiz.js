@@ -26,7 +26,7 @@ let questions = [
         optionC: "Darth Tyranus",
         optionD: "Darth Tiryan",
         correct: "A",
-        icon: document.getElementById("icon2")
+        icon: document.getElementById("icon1")
     },
     {
         question: "Name this character?",
@@ -217,12 +217,12 @@ $(start).click(function() {
 function scoreStructure() {
     let scoreContainer = document.getElementById("score-container");
     let scorePercentage = score + "/10";
-    if (score == 10) {var img = "assets/images/smart.jpg"
-    } else if (score >= 9) {var img = "assets/images/good.jpg"
-    } else if(score >= 7) {var img = "assets/images/mace.jpeg"
-    } else if(score >= 5) {var img = "assets/images/average.jpeg"
-    } else if(score >= 3) {var img = "assets/images/bad.jpeg"
-    } else if(score >= 0) {var img = "assets/images/worst.jpg"};
+    if (score == 10) {var img = "assets/images/p-best.jpg"
+    } else if (score >= 9) {var img = "assets/images/great.jpeg"
+    } else if(score >= 7) {var img = "assets/images/count-d.jpeg"
+    } else if(score >= 5) {var img = "assets/images/average.jpg"
+    } else if(score >= 3) {var img = "assets/images/badish.jpg"
+    } else if(score >= 0) {var img = "assets/images/b-droid.jpg"};
     $(scoreContainer).css("display", "block");
     $(scoreContainer).html("<p>You are.....</p><img src=" + img + "><p>" + scorePercentage + "</p>");
 };
