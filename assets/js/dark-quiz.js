@@ -122,12 +122,53 @@ let questions = [
 
 $(document).ready(function(){
     $("#start").hover(function(){
-        $(this).css("background-color", "red");
+        $(this).css("background-color", "#990000");
         $(this).css("color", "white");
     },
     function(){
         $(this).css("background-color", "#feda4a");
         $(this).css("color", "black");
+    });
+});
+
+$(document).ready(function(){
+    $("#a").hover(function(){
+        $(this).css("background-color", "#990000");
+        $(this).css("color", "white");
+    },
+    function(){
+        $(this).css("background-color", "transparent");
+        $(this).css("color", "#feda4a");
+    });
+});
+$(document).ready(function(){
+    $("#b").hover(function(){
+        $(this).css("background-color", "#990000");
+        $(this).css("color", "white");
+    },
+    function(){
+        $(this).css("background-color", "transparent");
+        $(this).css("color", "#feda4a");
+    });
+});
+$(document).ready(function(){
+    $("#c").hover(function(){
+        $(this).css("background-color", "#990000");
+        $(this).css("color", "white");
+    },
+    function(){
+        $(this).css("background-color", "transparent");
+        $(this).css("color", "#feda4a");
+    });
+});
+$(document).ready(function(){
+    $("#d").hover(function(){
+        $(this).css("background-color", "#990000");
+        $(this).css("color", "white");
+    },
+    function(){
+        $(this).css("background-color", "transparent");
+        $(this).css("color", "#feda4a");
     });
 });
 
