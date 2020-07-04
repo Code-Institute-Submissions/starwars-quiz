@@ -124,22 +124,32 @@ body {
 /*---------Below-1000-px-------*/
 
 @media (max-width: 1000px) {
+  .row {
+      display: block;
+  }  
   #question p {
     font-size: 3.3vw;
-    width: 100%;
+    min-width: 100%;
     height: auto;
     border: solid 5px;
     font-family: "Staatliches", cursive;
     margin: 0;
   }
 
+  .container {
+      min-width: 100%;
+      padding: 0;
+  }
+
   #options {
     font-size: 3.5vw;
-    width: 100%;
+    min-width: 100%;
     height: auto;
     border: solid 5px;
     font-family: "Staatliches", cursive;
     text-align: center;
+    padding: 0;
+    margin: 0;
   }
 
   #a {
@@ -179,12 +189,18 @@ body {
     height: 40vw;
     width: 50vw;
   }
+
+  .container {
+      min-width: 100%;
+      padding: 0;
+  }
+
   #start h1 {
   font-size: 7vw;
-}
+  }
   #question p {
     font-size: 4.2vw;
-    width: 100%;
+    min-width: 100%;
     height: auto;
     border: solid 5px;
     font-family: "Staatliches", cursive;
@@ -192,7 +208,7 @@ body {
 
   #options {
     font-size: 4.3vw;
-    width: 100%;
+    min-width: 100%;
     height: auto;
     border: solid 5px;
     font-family: "Staatliches", cursive;
@@ -228,6 +244,10 @@ body {
 /*---------Below-610-px-------*/
 
 @media (max-width: 610px) {
+  .container {
+      min-width: 100%;
+      padding: 0;
+  }  
   #question p {
     font-size: 5vw;
   }
@@ -249,6 +269,10 @@ body {
 /*---------Below-550-px-------*/
 
 @media (max-width: 550px) {
+  .container {
+      min-width: 100%;
+      padding: 0;
+  }  
   #question p {
     font-size: 5.5vw;
   }
@@ -267,16 +291,21 @@ body {
 /*---------Below-480-px-------*/
 
 @media (max-width: 480px) {
+  .container {
+      min-width: 100%;
+  }
+
   #question p {
     font-size: 5.5vw;
-    width: 100%;
-    height: auto;
+    padding-top: 2vh;
+    min-width: 100%;
+    height: 15vh;
     border: solid 5px;
     font-family: "Comfortaa", cursive;
   }
 
   #quest-img img {
-  width: auto;
+  min-width: auto;
   height: 26vh;
   padding-top: 3vh;
   text-align: center;
@@ -294,22 +323,22 @@ body {
   #a {
     border: solid 3px;
     width: 100%;
-    height: auto;
+    height: 7vh;
   }
   #b {
     border: solid 3px;
     width: 100%;
-    height: auto;
+    height: 7vh;
   }
   #c {
     border: solid 3px;
     width: 100%;
-    height: auto;
+    height: 7vh;
   }
   #d {
     border: solid 3px;
     width: 100%;
-    height: auto;
+    height: 7vh;
   }
   #counter {
     font-size: 5.5vw;

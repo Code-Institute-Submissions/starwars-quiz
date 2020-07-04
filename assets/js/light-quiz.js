@@ -122,7 +122,7 @@ let questions = [
 
 $(document).ready(function(){
     $("#start").hover(function(){
-        $(this).css("background-color", "blue");
+        $(this).css("background-color", "#002395");
         $(this).css("color", "white");
     },
     function(){
@@ -226,3 +226,55 @@ function scoreStructure() {
     $(scoreContainer).css("display", "block");
     $(scoreContainer).html("<p>You are.....</p><img src=" + img + "><p>" + scorePercentage + "</p>");
 };
+
+$(document).ready(function(){
+    $("#a").hover(function(){
+        $(this).css("background-color", "#002395");
+        $(this).css("color", "white");
+    },
+    function(){
+        $(this).css("background-color", "transparent");
+        $(this).css("color", "#feda4a");
+    });
+});
+$(document).ready(function(){
+    $("#b").hover(function(){
+        $(this).css("background-color", "#002395");
+        $(this).css("color", "white");
+    },
+    function(){
+        $(this).css("background-color", "transparent");
+        $(this).css("color", "#feda4a");
+    });
+});
+$(document).ready(function(){
+    $("#c").hover(function(){
+        $(this).css("background-color", "#002395");
+        $(this).css("color", "white");
+    },
+    function(){
+        $(this).css("background-color", "transparent");
+        $(this).css("color", "#feda4a");
+    });
+});
+$(document).ready(function(){
+    $("#d").hover(function(){
+        $(this).css("background-color", "#002395");
+        $(this).css("color", "white");
+    },
+    function(){
+        $(this).css("background-color", "transparent");
+        $(this).css("color", "#feda4a");
+    });
+});
+
+function resize() {
+    if ( $(window).width() < 1000) {     
+    $(".row").removeClass("flex");
+    };
+};
+$(window).on("resize", resize);
+resize();
+
+
+
