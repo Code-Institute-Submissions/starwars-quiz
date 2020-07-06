@@ -215,6 +215,7 @@ $(start).click(function() {
 });
 
 function scoreStructure() {
+    let nextQuiz = document.getElementById("d-quiz");
     let scoreContainer = document.getElementById("score-container");
     let scorePercentage = score + "/10";
     if (score == 10) {var img = "assets/images/smart.jpg"
@@ -225,6 +226,8 @@ function scoreStructure() {
     } else if(score >= 0) {var img = "assets/images/worst.jpg"};
     $(scoreContainer).css("display", "block");
     $(scoreContainer).html("<p>You are.....</p><img src=" + img + "><p>" + scorePercentage + "</p>");
+    $(nextQuiz).css("display", "block");
+    
 };
 
 $(document).ready(function(){

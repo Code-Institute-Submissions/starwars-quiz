@@ -50,6 +50,10 @@ body {
   text-align: center;
 }
 
+#d-quiz {
+    display: none;
+}
+
 @media (min-width: 1000px) {
   #question p {
     font-size: 3vw;

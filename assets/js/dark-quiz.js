@@ -256,6 +256,7 @@ $(start).click(function() {
 });
 
 function scoreStructure() {
+    let lightQuiz = document.getElementById("l-quiz");
     let scoreContainer = document.getElementById("score-container");
     let scorePercentage = score + "/10";
     if (score == 10) {var img = "assets/images/p-best.jpg"
@@ -266,4 +267,5 @@ function scoreStructure() {
     } else if(score >= 0) {var img = "assets/images/b-droid.jpg"};
     $(scoreContainer).css("display", "block");
     $(scoreContainer).html("<p>You are.....</p><img src=" + img + "><p>" + scorePercentage + "</p>");
+    $(lightQuiz).css("display", "block");
 };

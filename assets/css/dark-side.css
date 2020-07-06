@@ -2,6 +2,10 @@ body {
   background-color: black;
 }
 
+#l-quiz {
+    display: none;
+}
+
 #start-container {
   width: 100%;
   text-align: center;

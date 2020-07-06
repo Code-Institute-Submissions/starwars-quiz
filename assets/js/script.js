@@ -1,11 +1,11 @@
 setTimeout(function() {
     $(".star-wars").fadeOut("fast");
     $(".fade").fadeOut("fast");
-}, 35000);
+}, 32000);
 
 setTimeout(function() {
     $(".selection-heading").fadeIn("fast");
-}, 33000);
+}, 32000);
 
 $(".light-side").hover(function(){
   $(".blue-saber").css("visibility", "visible");
