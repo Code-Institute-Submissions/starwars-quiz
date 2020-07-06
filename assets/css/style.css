@@ -233,10 +233,28 @@ body {
 
 @media (max-width: 600px) {
   .crawl-p {
-      font-size: 40px;
+      font-size: 50px;
       word-spacing: 3px;
       letter-spacing: 2px;
       line-height: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .crawl-p {
+      font-size: 50px;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+      line-height: 1.5;
+  }
+}
+
+@media (max-width: 400px) {
+  .crawl-p {
+      font-size: 45px;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+      line-height: 1.3;
   }
 }
 
