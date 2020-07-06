@@ -3,6 +3,9 @@ body {
   height: 100%;
   background: #000;
   overflow: hidden;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
 }
 
 .fade {
@@ -34,6 +37,7 @@ body {
   top: 9999px;
   transform-origin: 50% 100%;
   animation: crawl 60s linear;
+  color: #feda4a;
 }
 
 .crawl > .title {
@@ -60,12 +64,19 @@ body {
 /*--------------------------------Main-menu-----------------------------------*/
 .selection-heading {
   display: none;
+  margin: 0;
+  padding: 0;
+}
+
+#star-background canvas {
+    position: fixed;
+    z-index: -1;
 }
 
 .heading-container {
   width: 100%;
   height: auto;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .head-logo-container {
