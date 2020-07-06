@@ -100,7 +100,7 @@ body {
 
 #score-container {
   display: none;
-  padding-top: 6vw;
+  padding-top: 0;
 }
 
 #score-container img {
@@ -175,6 +175,10 @@ body {
   #counter {
     font-size: 3.5vw;
     font-family: "Staatliches", cursive;
+  }
+  #score-container {
+  display: none;
+  padding-top: 5vh;
   }
   #score-container p {
   font-size: 6vw;
