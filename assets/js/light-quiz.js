@@ -231,6 +231,7 @@ function scoreStructure() {
 };
 
 $(document).ready(function(){
+    if ( $(window).width() > 1000) {
     $("#a").hover(function(){
         $(this).css("background-color", "#002395");
         $(this).css("color", "white");
@@ -239,8 +240,10 @@ $(document).ready(function(){
         $(this).css("background-color", "transparent");
         $(this).css("color", "#feda4a");
     });
+};
 });
 $(document).ready(function(){
+    if ( $(window).width() > 1000) {
     $("#b").hover(function(){
         $(this).css("background-color", "#002395");
         $(this).css("color", "white");
@@ -249,8 +252,10 @@ $(document).ready(function(){
         $(this).css("background-color", "transparent");
         $(this).css("color", "#feda4a");
     });
+};
 });
 $(document).ready(function(){
+    if ( $(window).width() > 1000) {
     $("#c").hover(function(){
         $(this).css("background-color", "#002395");
         $(this).css("color", "white");
@@ -259,8 +264,10 @@ $(document).ready(function(){
         $(this).css("background-color", "transparent");
         $(this).css("color", "#feda4a");
     });
+};
 });
 $(document).ready(function(){
+    if ( $(window).width() > 1000) {
     $("#d").hover(function(){
         $(this).css("background-color", "#002395");
         $(this).css("color", "white");
@@ -269,6 +276,7 @@ $(document).ready(function(){
         $(this).css("background-color", "transparent");
         $(this).css("color", "#feda4a");
     });
+};
 });
 
 function resize() {
