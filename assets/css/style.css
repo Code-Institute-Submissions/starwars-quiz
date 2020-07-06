@@ -160,7 +160,12 @@ body {
     width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1130px) {
+  .crawl-p {
+      font-size: 50px;
+      word-spacing: 5px;
+      letter-spacing: 3px;
+  }  
   #side-option {
       display: none;
   }
@@ -226,7 +231,16 @@ body {
 }
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 600px) {
+  .crawl-p {
+      font-size: 40px;
+      word-spacing: 3px;
+      letter-spacing: 2px;
+      line-height: 2;
+  }
+}
+
+@media (min-width: 1130px) {
   .sm-light-button-container {
       display: none;
   }
