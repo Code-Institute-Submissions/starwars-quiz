@@ -265,6 +265,7 @@ $(start).click(function() {
 
 function scoreStructure() {
     let lightQuiz = document.getElementById("l-quiz");
+    let dShare = document.getElementById("d-share");
     let scoreContainer = document.getElementById("score-container");
     let scorePercentage = score + "/10";
     if (score == 10) {var img = "assets/images/p-best.jpg"
@@ -276,4 +277,5 @@ function scoreStructure() {
     $(scoreContainer).css("display", "block");
     $(scoreContainer).html("<p>You are.....</p><img src=" + img + "><p>" + scorePercentage + "</p>");
     $(lightQuiz).css("display", "block");
+    $(dShare).css("display", "block");
 };

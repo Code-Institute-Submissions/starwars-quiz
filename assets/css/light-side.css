@@ -54,6 +54,15 @@ body {
     display: none;
 }
 
+#l-share {
+    display: none;
+    padding-top: 2vh;
+}
+
+.shareaholic-share-buttons-container.shareaholic-vertical ul.shareaholic-share-buttons {
+    display: none !important;
+}
+
 @media (min-width: 1000px) {
   #question p {
     font-size: 3vw;
@@ -108,7 +117,7 @@ body {
 }
 
 #score-container img {
-  width: 60vw;
+  width: 45vw;
 }
 
 #score-container p {

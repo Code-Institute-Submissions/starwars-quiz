@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- BEGIN SHAREAHOLIC CODE -->
+    <link
+      rel="preload"
+      href="https://cdn.shareaholic.net/assets/pub/shareaholic.js"
+      as="script"
+    />
+    <meta
+      name="shareaholic:site_id"
+      content="22372275c104e2675119f5bfda6fca6c"
+    />
+    <script
+      data-cfasync="false"
+      async
+      src="https://cdn.shareaholic.net/assets/pub/shareaholic.js"
+    ></script>
+    <!-- END SHAREAHOLIC CODE -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -38,13 +54,13 @@
         </div>
         <div id="question"><p>Question</p></div>
         <div class="container">
-        <div class="row large-screen" id="options">
-          <div class="option col" id="a" onclick="checkAnswer('A')">A</div>
-          <div class="option col" id="b" onclick="checkAnswer('B')">B</div>
-          <div class="w-100"></div>
-          <div class="option col" id="c" onclick="checkAnswer('C')">C</div>
-          <div class="option col" id="d" onclick="checkAnswer('D')">D</div>
-        </div>
+          <div class="row large-screen" id="options">
+            <div class="option col" id="a" onclick="checkAnswer('A')">A</div>
+            <div class="option col" id="b" onclick="checkAnswer('B')">B</div>
+            <div class="w-100"></div>
+            <div class="option col" id="c" onclick="checkAnswer('C')">C</div>
+            <div class="option col" id="d" onclick="checkAnswer('D')">D</div>
+          </div>
         </div>
         <div id="timer">
           <div id="counter">20</div>
@@ -66,12 +82,13 @@
       </div>
       <div id="score-container"></div>
       <div id="d-quiz" class="col dark-button-container">
-            <a href="./quiz-dark.html">
-              <button type="button" class="dark-side btn btn-danger my-auto">
-                TRY THE PATH OF THE DARK SIDE
-              </button>
-            </a>
+        <a href="./quiz-dark.html">
+          <button type="button" class="dark-side btn btn-danger my-auto">
+            TRY THE PATH OF THE DARK SIDE
+          </button>
+        </a>
       </div>
+      <div id="l-share" class="shareaholic-canvas" data-app="share_buttons" data-app-id="28918876"></div>
     </div>
     <script
       src="https://kit.fontawesome.com/c758990a97.js"
