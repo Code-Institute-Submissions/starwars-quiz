@@ -45,9 +45,10 @@
 
   <body>
     <section id="home-page">
+<!----------------------------------Crawling-introduction-------------------------------------------->
       <div class="fade"></div>
-      <section class="star-wars">
-        <div class="crawl">
+      <section class="star-wars yellow p-gothic">
+        <div class="crawl yellow">
           <div class="title">
             <p>Star Wars</p>
             <h1>Quiz</h1>
@@ -66,83 +67,67 @@
           <p class="crawl-p">Standby for further instructions!</p>
         </div>
       </section>
+
+<!----------------------------------Main-menu-------------------------------------------->
       <section class="selection-heading">
         <div id="star-background"><canvas id="field"></canvas></div>
         <div class="heading-container">
           <div class="head-logo-container">
-            <img id="head-logo" src="assets/ai/quiz-logo.svg" />
+            <img class="head-logo yellow" src="assets/ai/quiz-logo.svg" />
           </div>
-          <h2>Choose your side you must</h2>
+          <h2 class="white cursive-font">Choose your side you must</h2>
         </div>
+<!----------------------------------Choose-your-side-option-------------------------------------------->        
         <div class="container" id="side-option">
           <div class="row row-cols-4">
             <div class="col b-saber-container">
-              <img
-                class="blue-saber"
-                src="assets/images/blue-saber.png"
-                alt=""
-              />
+              <img class="blue-saber" src="assets/images/blue-saber.png" alt=""/>
             </div>
             <div class="col light-button-container">
-              <button
-                type="button"
-                class="light-button light-side btn btn-primary my-auto"
-                onclick="lightSideButton()"
-              >
-                LIGHT SIDE
-              </button>
+              <button type="button" class="light-button light-side btn btn-primary my-auto" onclick="lightSideButton()">LIGHT SIDE</button>
             </div>
             <div class="col dark-button-container">
-              <button
-                type="button"
-                class="dark-side dark-button btn btn-danger my-auto"
-                onclick="darkSideButton()"
-              >
-                DARK SIDE
-              </button>
+              <button type="button" class="dark-side dark-button btn btn-danger my-auto" onclick="darkSideButton()">DARK SIDE</button>
             </div>
             <div class="col r-saber-container">
-              <img class="red-saber" src="assets/images/red-saber.png" alt="" />
+              <img class="red-saber" src="assets/images/red-saber.png" alt=""/>
             </div>
           </div>
         </div>
+<!----------------------------------Smaller-screen-layout-------------------------------------------->
         <div class="container small-container">
           <div class="row row-cols-2">
             <div class="col sm-light-button-container">
-              <button
-                type="button"
-                class="light-button sm-light-side btn btn-primary my-auto"
-                onclick="lightSideButton()"
-              >
-                LIGHT SIDE
-              </button>
+              <button type="button" class="light-button sm-light-side btn btn-primary my-auto" onclick="lightSideButton()">LIGHT SIDE</button>
             </div>
             <div class="col sm-dark-button-container">
-              <button
-                type="button"
-                class="dark-button sm-dark-side btn btn-danger my-auto"
-                onclick="darkSideButton()"
-              >
-                DARK SIDE
-              </button>
+              <button type="button" class="dark-button sm-dark-side btn btn-danger my-auto" onclick="darkSideButton()">DARK SIDE</button>
             </div>
           </div>
         </div>
       </section>
     </section>
 
-      <!----------------------------------Quiz-------------------------------------------->
+<!----------------------------------Quiz-start------------------------------------------->
 
       <section id="quiz-page">
         <div id="start-container">
-          <button id="start"><h1>Click to start</h1></button>
+          <button class="tutorial-button start-how b-yellow"><h1 class="cursive-font">Tutorial</h1></button>
+          <button id="start" class="start-how b-yellow"><h1 class="cursive-font">Start</h1></button>
+          <button class="start-how b-yellow"><h1 class="cursive-font">Exit</h1></button>
         </div>
-        <div id="quiz">
+
+<!----------------------------------Question-------------------------------------------->
+
+        <div id="quiz" class="yellow">
           <div id="main-quiz">
             <div id="quest-img-container">
               <div id="quest-img"><img src="#"/></div>
             </div>
             <div id="question"><p>Question</p></div>
+
+<!----------------------------------Options-------------------------------------------->
+
             <div class="container">
               <div class="row large-screen" id="options">
                 <div class="option col" id="a" onclick="checkAnswer('A')">
@@ -160,9 +145,15 @@
                 </div>
               </div>
             </div>
+
+<!----------------------------------Timer-------------------------------------------->
+
             <div id="timer">
               <div id="counter">20</div>
             </div>
+
+<!----------------------------------Question-icons-------------------------------------------->
+
             <div id="progress">
               <div class="progr">
                 <i class="icon1 fas fa-jedi"></i>
@@ -178,23 +169,56 @@
               </div>
             </div>
           </div>
+
+<!----------------------------------Score-container-------------------------------------------->
+
           <div id="score-container"></div>
           <div id="d-quiz" class="col dark-button-container">
-            <button type="button" class="dark-side btn btn-danger my-auto">
-                TRY THE PATH OF THE DARK SIDE
-            </button>
+            <button type="button" class="dark-side btn btn-danger my-auto">Exit</button>
           </div>
-          <div
-            id="sharer"
-            class="shareaholic-canvas"
-            data-app="share_buttons"
-            data-app-id="28918876"
-          ></div>
+          <div id="sharer" class="shareaholic-canvas" data-app="share_buttons" data-app-id="28918876"></div>
         </div>
+
+<!-----------------------------------Modal------------------------------>
+
+        <div id="tutorial" class="modal b-yellow tutorial-style">
+            <div class="tutorial-content">
+                <div class="tutorial-head">
+                    <h2>How to Play</h2>
+                </div>
+                <div class="pt-2 px-1 pb-0 d-flex flex-column">
+                    <ul>
+                        <li>
+                            Click "Start" to start the game.
+                        </li>
+                        <li>
+                            Once your game starts, you will be shown an image, question and four possible answers.
+                            <br> - Simply click the answer you want.
+                            <br> - If it's correct, the icons below let you know if it was right or wrong - remember the images can help
+                            with question, but not always.
+                        </li>
+                        <li>
+                            If at any point you want to exit the quiz, you can click on the exit button at
+                            the bottom of the screen.
+                        </li>
+                        <li>
+                            Have fun and may the force be with you!
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-2 text-center">
+                    <button class="modal-close border-0 l-brown-background">
+                        <i class="far fa-times-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
       </section>
     <script src="https://kit.fontawesome.com/c758990a97.js" crossorigin="anonymous"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/dupfix.js"></script>
+    <script src="assets/js/quiz.js"></script>
   </body>
 </html>
