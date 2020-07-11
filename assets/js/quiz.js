@@ -394,9 +394,9 @@ function checkAnswer(answer) {
 };
 
 //------start-quiz-function------this-sets-up-the-quiz-as-user-clicks-start-button
-
+let startContain = document.getElementById("start-container");
 $(start).click(function() {
-    $(start).css('display','none');
+    $(startContain).css('display','none');
     //counterStructure();
     countTimer = setInterval(counterStructure, 1000);
     questionStructure();
@@ -425,6 +425,12 @@ function scoreStructure() {
 
 let instruct = document.getElementsByClassName("tutorial-button");
 let tutorial = document.getElementsByClassName("modal");
+let exitModal = document.getElementsByClassName("modal-close");
+
 $(instruct).click(function() {
     $(tutorial).css('display','block');
+});
+
+$(exitModal).click(function() {
+    $(tutorial).css('display','none');
 });

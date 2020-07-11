@@ -96,7 +96,7 @@
         </div>
 <!----------------------------------Smaller-screen-layout-------------------------------------------->
         <div class="container small-container">
-          <div class="row row-cols-2">
+          <div class="row side-row row-cols-2">
             <div class="col sm-light-button-container">
               <button type="button" class="light-button sm-light-side btn btn-primary my-auto" onclick="lightSideButton()">LIGHT SIDE</button>
             </div>
@@ -129,7 +129,7 @@
 <!----------------------------------Options-------------------------------------------->
 
             <div class="container">
-              <div class="row large-screen" id="options">
+              <div class="row option-row large-screen" id="options">
                 <div class="option col" id="a" onclick="checkAnswer('A')">
                   A
                 </div>
@@ -182,20 +182,20 @@
 <!-----------------------------------Modal------------------------------>
 
         <div id="tutorial" class="modal b-yellow tutorial-style">
-            <div class="tutorial-content">
+            <div class="tutorial-content black cursive-font">
                 <div class="tutorial-head">
                     <h2>How to Play</h2>
                 </div>
-                <div class="pt-2 px-1 pb-0 d-flex flex-column">
+                <div class="flex-column">
                     <ul>
                         <li>
                             Click "Start" to start the game.
                         </li>
                         <li>
                             Once your game starts, you will be shown an image, question and four possible answers.
-                            <br> - Simply click the answer you want.
-                            <br> - If it's correct, the icons below let you know if it was right or wrong - remember the images can help
-                            with question, but not always.
+                            <br> - Simply click the answer of your choice.
+                            <br> - If it's correct, the icons below will let you know if it was right or wrong - remember the images can help
+                            with the question, but not always.
                         </li>
                         <li>
                             If at any point you want to exit the quiz, you can click on the exit button at
@@ -206,7 +206,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="p-2 text-center">
+                <div class="text-center">
                     <button class="modal-close border-0 l-brown-background">
                         <i class="far fa-times-circle"></i>
                     </button>
