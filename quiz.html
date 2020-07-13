@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- BEGIN SHAREAHOLIC CODE -->
+    <link
+      rel="preload"
+      href="https://cdn.shareaholic.net/assets/pub/shareaholic.js"
+      as="script"
+    />
+    <meta
+      name="shareaholic:site_id"
+      content="22372275c104e2675119f5bfda6fca6c"
+    />
+    <script
+      data-cfasync="false"
+      async
+      src="https://cdn.shareaholic.net/assets/pub/shareaholic.js"
+    ></script>
+    <!-- END SHAREAHOLIC CODE -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Star Wars Quiz</title>
+  </head>
+
+  <body>
+<!----------------------------------Main-menu-------------------------------------------->
+      <section class="selection-heading">
+        <div id="star-background"><canvas id="field"></canvas></div>
+        <div class="heading-container">
+          <div class="head-logo-container">
+            <img class="head-logo yellow" src="assets/images/quiz-logo.svg"/>
+          </div>
+          <h2 class="white cursive-font">Choose your side you must</h2>
+        </div>
+<!----------------------------------Choose-your-side-option-------------------------------------------->        
+        <div class="container" id="side-option">
+          <div class="row row-cols-4">
+            <div class="col b-saber-container">
+              <img class="blue-saber" src="assets/images/blue-saber.png" alt=""/>
+            </div>
+            <div class="col light-button-container">
+              <button type="button" class="light-button light-side btn btn-primary my-auto" onclick="lightSideButton()">LIGHT SIDE</button>
+            </div>
+            <div class="col dark-button-container">
+              <button type="button" class="dark-side dark-button btn btn-danger my-auto" onclick="darkSideButton()">DARK SIDE</button>
+            </div>
+            <div class="col r-saber-container">
+              <img class="red-saber" src="assets/images/red-saber.png" alt=""/>
+            </div>
+          </div>
+        </div>
+<!----------------------------------Smaller-screen-layout-------------------------------------------->
+        <div class="container small-container">
+          <div class="row side-row row-cols-2">
+            <div class="col sm-light-button-container">
+              <button type="button" class="light-button sm-light-side btn btn-primary my-auto" onclick="lightSideButton()">LIGHT SIDE</button>
+            </div>
+            <div class="col sm-dark-button-container">
+              <button type="button" class="dark-button sm-dark-side btn btn-danger my-auto" onclick="darkSideButton()">DARK SIDE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!----------------------------------Quiz-start------------------------------------------->
+
+      <section id="quiz-page">
+        <div id="start-container">
+          <button class="tutorial-button start-how b-yellow"><h1 class="cursive-font">Tutorial</h1></button>
+          <button id="start" class="start-how b-yellow"><h1 class="cursive-font">Start</h1></button>
+          <button class="exit-button start-how b-yellow"><h1 class="cursive-font">Exit</h1></button>
+        </div>
+
+<!----------------------------------Question-------------------------------------------->
+
+        <div id="quiz" class="yellow">
+          <div id="main-quiz">
+            <div id="quest-img-container">
+              <div id="quest-img"><img src="#"/></div>
+            </div>
+            <div id="question"><p>Question</p></div>
+
+<!----------------------------------Options-------------------------------------------->
+
+            <div class="container">
+              <div class="row option-row large-screen" id="options">
+                <div class="option col" id="a" onclick="checkAnswer('A')">
+                  A
+                </div>
+                <div class="option col" id="b" onclick="checkAnswer('B')">
+                  B
+                </div>
+                <div class="w-100"></div>
+                <div class="option col" id="c" onclick="checkAnswer('C')">
+                  C
+                </div>
+                <div class="option col" id="d" onclick="checkAnswer('D')">
+                  D
+                </div>
+              </div>
+            </div>
+
+<!----------------------------------Timer-------------------------------------------->
+
+            <div id="timer">
+              <div id="counter">20</div>
+            </div>
+
+<!----------------------------------Question-icons-------------------------------------------->
+
+            <div id="progress">
+              <div class="progr">
+                <i class="icon1 fas fa-jedi"></i>
+                <i class="icon2 fas fa-jedi"></i>
+                <i class="icon3 fas fa-jedi"></i>
+                <i class="icon4 fas fa-jedi"></i>
+                <i class="icon5 fas fa-jedi"></i>
+                <i class="icon6 fas fa-jedi"></i>
+                <i class="icon7 fas fa-jedi"></i>
+                <i class="icon8 fas fa-jedi"></i>
+                <i class="icon9 fas fa-jedi"></i>
+                <i class="icon10 fas fa-jedi"></i>
+              </div>
+            </div>
+
+<!----------------------------------Exit-from-question-screen-------------------------------------------->
+
+          <div class="exit-quest-container"><button class="exit-button exit-quest b-yellow"><h1 class="cursive-font">Give up</h1></button></div>
+        </div>  
+
+<!----------------------------------Score-container-------------------------------------------->
+
+          <div class="score-section">
+            <div id="score-container"></div>
+            <div id="d-quiz" class="col dark-button-container">
+              <button type="button" class="dark-side btn btn-danger my-auto">Exit</button>
+            </div>
+            <div id="sharer" class="shareaholic-canvas" data-app="share_buttons" data-app-id="28918876"></div>
+            <div class="exit-quest-container exit-score"><button class="exit-button exit-quest b-yellow"><h1 class="cursive-font">Exit</h1></button></div>
+          </div> 
+        </div>
+
+<!-----------------------------------Modal------------------------------>
+
+        <div id="tutorial" class="modal b-yellow tutorial-style">
+            <div class="tutorial-content black cursive-font">
+                <div class="tutorial-head">
+                    <h2>How to Play</h2>
+                </div>
+                <div class="flex-column">
+                    <ul>
+                        <li>
+                            Click "Start" to start the game.
+                        </li>
+                        <li>
+                            Once your game starts, you will be shown an image, question and four possible answers.
+                            <br> - Simply click the answer of your choice.
+                            <br> - If it's correct, the icons below will let you know if it was right or wrong - remember the images can help
+                            with the question, but not always.
+                        </li>
+                        <li>
+                            If at any point you want to exit the quiz, you can click on the exit button at
+                            the bottom of the screen.
+                        </li>
+                        <li>
+                            Have fun and may the force be with you!
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <button class="modal-close border-0 l-brown-background">
+                        <i class="far fa-times-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/c758990a97.js" crossorigin="anonymous"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/quiz.js"></script>
+  </body>
+</html>

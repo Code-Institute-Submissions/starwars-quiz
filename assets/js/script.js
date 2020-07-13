@@ -1,11 +1,4 @@
-setTimeout(function() {
-    $(".star-wars").fadeOut("fast");
-    $(".fade").fadeOut("fast");
-}, 280);
-
-setTimeout(function() {
-    $(".selection-heading").fadeIn("fast");
-}, 280);
+//side-option-saber-appearing-when-hovering-over-button
 
 $(".light-side").hover(function(){
   $(".blue-saber").css("visibility", "visible");
