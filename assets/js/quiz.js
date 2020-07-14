@@ -44,6 +44,7 @@ function darkSideButton() {
 //----------questions---------------------------------
 
 let questions = [
+  q1 = [   
   {
     question: "What is the name of Princess Leia's home world?",
     imgSrc: "assets/images/aldy.jpg",
@@ -147,9 +148,117 @@ let questions = [
     correct: "B",
     icon: document.getElementsByClassName("icon10"),
   },
+  ],
+  q2 = [
+  //next-set-of-questions
+  {
+    question: "Who said, “Greed can be a powerful ally.”?",
+    imgSrc: "assets/images/bb.jpg",
+    optionA: "Qui-Gon Jinn",
+    optionB: "Obi-Wan Kenobi",
+    optionC: "Mace Windu",
+    optionD: "Anakin Skywalker",
+    correct: "A",
+    icon: document.getElementsByClassName("icon1"),
+  },
+  {
+    question: "In 'A New Hope', at Mos Eisley spaceport, the Millennium Falcon was in which docking bay?",
+    imgSrc: "assets/images/nute.jpeg",
+    optionA: "18",
+    optionB: "94",
+    optionC: "48",
+    optionD: "72",
+    correct: "B",
+    icon: document.getElementsByClassName("icon2"),
+  },
+  {
+    question: "Who is surrounded by droids before asking 'Do we have a Plan B'?",
+    imgSrc: "assets/images/palps.jpg",
+    optionA: "Anakin Skywalker",
+    optionB: "Han Solo",
+    optionC: "Ahsoka Tano",
+    optionD: "Obi-Wan Kenobi",
+    correct: "D",
+    icon: document.getElementsByClassName("icon3"),
+  },
+  {
+    question:
+      "In The Empire Strikes Back, whose call sign on Hoth was Echo 7?",
+    imgSrc: "assets/images/3po-mil.jpg",
+    optionA: "Luke Skywalker",
+    optionB: "Han Solo",
+    optionC: "Chewbacca",
+    optionD: "Princess Leia",
+    correct: "B",
+    icon: document.getElementsByClassName("icon4"),
+  },
+  {
+    question: "What does C3PO tell Uncle Owen he did at his first job?",
+    imgSrc: "assets/images/obi-fall.png",
+    optionA: "Programmed intergalactic turbines",
+    optionB: "Programmed Binary Short turbines",
+    optionC: "Intergalactic program translator",
+    optionD: "Programmed Binary Load lifters",
+    correct: "D",
+    icon: document.getElementsByClassName("icon5"),
+  },
+  {
+    question:
+      "Name this character?",
+    imgSrc: "assets/images/sabe.jpeg",
+    optionA: "Padmé",
+    optionB: "Sabé",
+    optionC: "Fadmé",
+    optionD: "Faamé",
+    correct: "B",
+    icon: document.getElementsByClassName("icon6"),
+  },
+  {
+    question: "Whakjkdjkdjdkljdkljdkljdkljdkl cell?",
+    imgSrc: "assets/images/medi.png",
+    optionA: "Over 2,000,000",
+    optionB: "Over 2,000",
+    optionC: "Over 200,000",
+    optionD: "Over 20,000",
+    correct: "D",
+    icon: document.getElementsByClassName("icon7"),
+  },
+  {
+    question: "jnjdndndnjdnjdnjkdnkdnkdnkd?",
+    imgSrc: "assets/images/unky.jpg",
+    optionA: "Unkar Plutt",
+    optionB: "Razur Froy",
+    optionC: "Dobbu Scay",
+    optionD: "Nien Nunb",
+    correct: "A",
+    icon: document.getElementsByClassName("icon8"),
+  },
+  {
+    question: "Who skldjkdjkdjdkljdlkjdlkjkldjlity'?",
+    imgSrc: "assets/images/luke-rey.jpg",
+    optionA: "Obi-wan Kenobi",
+    optionB: "Luke Skywalker",
+    optionC: "Qui-Gon Jinn",
+    optionD: "Mace Windu",
+    correct: "C",
+    icon: document.getElementsByClassName("icon9"),
+  },
+  {
+    question:
+      "Finikdjkjdkjdkjdkjdkdjkdjkdjkdng........!?'",
+    imgSrc: "assets/images/leia.jpg",
+    optionA: "bantha fodder",
+    optionB: "nerf herder",
+    optionC: "no-wood swindler",
+    optionD: "buckethead",
+    correct: "B",
+    icon: document.getElementsByClassName("icon10"),
+  },
+  ],
 ];
 
 let darkQuestions = [
+  q1 = [  
   {
     question: "What was the name of Emporer Palpatines master?",
     imgSrc: "assets/images/plag.jpg",
@@ -250,6 +359,110 @@ let darkQuestions = [
     correct: "B",
     icon: document.getElementsByClassName("icon10"),
   },
+  ],
+  //next-set-of-questions
+  [q2 =
+  {
+    question: "In Star Wars, what does the acronym AT-ST stand for??",
+    imgSrc: "assets/images/plag.jpg",
+    optionA: "Adverse Tactical Scout Transport",
+    optionB: "Armed Tactical Scout Transport",
+    optionC: "All-Terrain Scout Transport",
+    optionD: "Armed Tactical Swift Transport",
+    correct: "C",
+    icon: document.getElementsByClassName("icon1"),
+  },
+  {
+    question: "Who conspired with Count Dooku to have Jabba the Hutt’s son Rotta killed?",
+    imgSrc: "assets/images/nute.jpeg",
+    optionA: "Chibo",
+    optionB: "Waddo",
+    optionC: "Ziro",
+    optionD: "Jango Fett",
+    correct: "C",
+    icon: document.getElementsByClassName("icon2"),
+  },
+  {
+    question: "Who is surrounded by droids before asking 'Do we have a Plan B'?",
+    imgSrc: "assets/images/palps.jpg",
+    optionA: "Anakin Skywalker",
+    optionB: "Han Solo",
+    optionC: "Ahsoka Tano",
+    optionD: "Obi-Wan Kenobi",
+    correct: "D",
+    icon: document.getElementsByClassName("icon3"),
+  },
+  {
+    question: "Who said, “Greed can be a powerful ally.”?",
+    imgSrc: "assets/images/bb.jpg",
+    optionA: "Qui-Gon Jinn",
+    optionB: "Obi-Wan Kenobi",
+    optionC: "Mace Windu",
+    optionD: "Anakin Skywalker",
+    correct: "A",
+    icon: document.getElementsByClassName("icon4"),
+  },
+  {
+    question: "Wkjjhjkhjkkjs?",
+    imgSrc: "assets/images/grevy.jpg",
+    optionA: "Yuzzum",
+    optionB: "Kaleesh",
+    optionC: "Chagrian",
+    optionD: "Devaronian",
+    correct: "B",
+    icon: document.getElementsByClassName("icon5"),
+  },
+  {
+    question: "Whkjhjkhjkhkjhjkhjkhjkrld?",
+    imgSrc: "assets/images/sith-home.jpg",
+    optionA: "Dantooine",
+    optionB: "Dathomir",
+    optionC: "Jedha",
+    optionD: "Moraband",
+    correct: "D",
+    icon: document.getElementsByClassName("icon6"),
+  },
+  {
+    question: "Gkjhjhjhjkhjkhjhjhjjhjhher?",
+    imgSrc: "assets/images/count-d.jpeg",
+    optionA: "Count Douku",
+    optionB: "Darth Bane",
+    optionC: "Darth Revan",
+    optionD: "Darth Tyranus",
+    correct: "D",
+    icon: document.getElementsByClassName("icon7"),
+  },
+  {
+    question: "Ouhjhkkjjgjjhgghjghjgjhgst?",
+    imgSrc: "assets/images/star-d.jpeg",
+    optionA: "Executor-class Star Destroyer",
+    optionB: "Imperial-class Star Destroyer",
+    optionC: "Harrower-class dreadnought",
+    optionD: "AT-AT",
+    correct: "A",
+    icon: document.getElementsByClassName("icon8"),
+  },
+  {
+    question: "Whojgjhhjjhjhjhjhjkhjkhjkhjkar?",
+    imgSrc: "assets/images/d-plans.png",
+    optionA: "Darth Vader",
+    optionB: "Grand Admiral Thrawn",
+    optionC: "Grand Moff Tarkin",
+    optionD: "General Hux",
+    correct: "C",
+    icon: document.getElementsByClassName("icon9"),
+  },
+  {
+    question: "Fijhghjjhjhjkhjkhkjhjkhjkhjkhjkh........!?'",
+    imgSrc: "assets/images/dv.jpg",
+    optionA: "your ego",
+    optionB: "your aspirations",
+    optionC: "your overconfidence",
+    optionD: "your dreams",
+    correct: "B",
+    icon: document.getElementsByClassName("icon10"),
+  },
+  ],
 ];
 
 //---------this-changes-the-color-of-the-menu-buttons-when-hovered-over---------
@@ -326,13 +539,23 @@ $(document).ready(function () {
   }
 });
 
-let lastQuestion = questions.length - 1;
+//-------randomize-questions---------
+
+function randomQuest() {
+    let randomNumber = Math.floor(Math.random() * 2); 
+    console.log()
+    randomQuestion = questions[randomNumber][currentQuestion];
+}
+
+let lastQuestion = questions[0].length - 1;
 let currentQuestion = 0;
+let randomQuestion;
 
 //------question-structure-fills-the-question-and-options-----
 
 function questionStructure() {
-  let q = questions[currentQuestion];
+  randomQuest();  
+  let q = randomQuestion;
   qImg.innerHTML = "<img src=" + q.imgSrc + ">";
   question.innerHTML = "<p>" + q.question + "</p>";
   optionA.innerHTML = q.optionA;
@@ -353,13 +576,13 @@ function progressStructure() {
 
 //-------this-changes-icon-colors-representing-right-wrong--------
 function correctAnswer() {
-  let qIcon = questions[currentQuestion].icon;
+  let qIcon = randomQuestion.icon;
   $(qIcon).css("color", "blue");
   console.log();
 }
 
 function wrongAnswer() {
-  let qIcon = questions[currentQuestion].icon;
+  let qIcon = randomQuestion.icon;
   $(qIcon).css("color", "red");
   console.log();
 }
@@ -392,7 +615,7 @@ function counterStructure() {
 //-------checks-answer-of-user------
 
 function checkAnswer(answer) {
-  if (questions[currentQuestion].correct == answer) {
+  if (randomQuestion.correct == answer) {
     score++;
     correctAnswer();
     console.log("Correct!");
@@ -423,8 +646,7 @@ $(start).click(function () {
 
 //------score-structure---to-display-someones-score-with-the-image-asigned-to-that-score
 
-function scoreStructure() {
-  debugger;  
+function scoreStructure() {  
   let share = document.getElementById("sharer");
   let scoreContainer = document.getElementById("score-container");
   let scorePercentage = score + "/10";
