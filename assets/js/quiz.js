@@ -25,6 +25,10 @@ const progress = document.getElementById("progress");
 
 let exitButton = document.getElementsByClassName("exit-button");
 
+let volumeButton = document.getElementsByClassName("volume-button");
+
+let volumeOff = document.getElementsByClassName("volume-off-button");
+
 let sideChooser = document.getElementsByClassName("selection-heading");
 //------------choose-side-function-------
 
@@ -32,12 +36,14 @@ function lightSideButton() {
   $(sideChooser).hide();
   $(quizPage).show();
   $(startContain).show();
+  lightChoiceAudio();
 }
 
 function darkSideButton() {
   $(sideChooser).hide();
   $(quizPage).show();
   $(startContain).show();
+  darkChoiceAudio();
   questions = darkQuestions;
 }
 
@@ -684,7 +690,7 @@ let darkQuestions = [
   [q2 =
   {
     question: "In Star Wars, what does the acronym AT-ST stand for?",
-    imgSrc: "assets/images/at-st.jpg",
+    imgSrc: "assets/images/at-st.jpeg",
     optionA: "Adverse Tactical Scout Transport",
     optionB: "Armed Tactical Scout Transport",
     optionC: "All-Terrain Scout Transport",
@@ -808,10 +814,10 @@ let darkQuestions = [
   {
     question: "What does Palapatine address Yoda as during their duel?",
     imgSrc: "assets/images/palps.jpg",
-    optionA: "You're no match for me",
-    optionB: "How disappointing",
-    optionC: "You're not a jedi yet",
-    optionD: "All to easy",
+    optionA: "Green wretch",
+    optionB: "Arrogant old man",
+    optionC: "Weak old man",
+    optionD: "Little green friend",
     correct: "D",
     icon: document.getElementsByClassName("icon3"),
   },
@@ -847,7 +853,7 @@ let darkQuestions = [
   },
   {
     question: "Which Species Was Palpatine's Mentor?",
-    imgSrc: "assets/images/father-v.jpg",
+    imgSrc: "assets/images/plaggy.jpg",
     optionA: "Rodian",
     optionB: "Zabrak",
     optionC: "Kerp",
@@ -1171,7 +1177,6 @@ $(document).ready(function () {
 //-------randomize-questions---------
 
 function randomQuest() {
-    debugger;
     let randomNumber = Math.floor(Math.random() * 5); 
     console.log()
     randomQuestion = questions[randomNumber][currentQuestion];
@@ -1184,7 +1189,6 @@ let randomQuestion;
 //------question-structure-fills-the-question-and-options-----
 
 function questionStructure() {
-  debugger; 
   randomQuest();  
   let q = randomQuestion;
   qImg.innerHTML = "<img src=" + q.imgSrc + ">";
@@ -1273,6 +1277,8 @@ $(start).click(function () {
   questionStructure();
   $(quiz).show();
   $(progress).show();
+  audio.gameActive === true;
+  backgroundMusic();
 });
 
 //------score-structure---to-display-someones-score-with-the-image-asigned-to-that-score
@@ -1302,6 +1308,8 @@ function scoreStructure() {
     "<p>You are.....</p><img src=" + img + "><p>" + scorePercentage + "</p>"
   );
   $(share).show();
+  audio.gameActive === false;
+  quizCompleteAudio();
   $(".exit-score").show();
   }
   function darkScoreStructure() {

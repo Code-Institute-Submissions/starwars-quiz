@@ -39,14 +39,14 @@ body {
 /*--------------------------------Crawling-intro-----------------------------------*/
 
 .skip-container {
-    text-align: right;
-    height: 10vh;
+  text-align: right;
+  height: 10vh;
 }
 
 .skip-button {
-    margin: 1.5vw 3vw 0vw;
-    width: 80px;
-    height: auto;
+  margin: 1.5vw 3vw 0vw;
+  width: 80px;
+  height: auto;
 }
 
 .fade {
@@ -102,7 +102,6 @@ body {
 /*--------------------------------Main-menu-----------------------------------*/
 .selection-heading {
   margin: 0;
-  padding: 0;
 }
 
 #star-background canvas {
@@ -194,13 +193,34 @@ body {
   width: 100%;
 }
 
+.volume-container {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.volume-button {
+  padding: 0 20px 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 35px;
+}
+
+.volume-off-button {
+  display: none;
+  padding: 0 20px 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 35px;
+}
+
 @media (max-width: 1130px) {
   .skip-button {
     width: 100px !important;
-  }  
+  }
   .skip-button strong {
     font-size: 30px;
-  }  
+  }
   .crawl-p {
     font-size: 50px;
     word-spacing: 5px;
@@ -238,10 +258,10 @@ body {
 @media (max-width: 700px) {
   .skip-button {
     width: 80px !important;
-  }  
+  }
   .skip-button strong {
     font-size: 20px;
-  }  
+  }
   #side-option {
     display: none;
   }
@@ -409,17 +429,17 @@ body {
 }
 
 .exit-quest-container {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .exit-quest {
-    padding-top: 8px;
-    width: auto;
-    height: auto;
+  padding-top: 8px;
+  width: auto;
+  height: auto;
 }
 
 .exit-score {
-    display: none;
+  display: none;
 }
 
 /*---------Above-1024-px-------*/
@@ -552,7 +572,7 @@ body {
     font-family: "Staatliches", cursive;
   }
   #score-container img {
-  width: 70vw;
+    width: 70vw;
   }
   #score-container p {
     font-size: 6vw;
@@ -791,21 +811,21 @@ body {
     margin: 5vw 2vw 2vw;
   }
   .flex-column {
-  margin-top: 0 !important;
-  font-size: 21px !important;
+    margin-top: 0 !important;
+    font-size: 21px !important;
   }
   #start-container {
-  display: block;
-  padding-top: 25%;
-  padding-left: 29%;
+    display: block;
+    padding-top: 25%;
+    padding-left: 29%;
   }
   .start-how {
-  height: 40vw;
-  width: 40vw;
-  margin: 2vw;
+    height: 40vw;
+    width: 40vw;
+    margin: 2vw;
   }
   .start-how h1 {
-  font-size: 8vw;
+    font-size: 8vw;
   }
 }
 
@@ -820,11 +840,11 @@ body {
     margin: 1vw 2vw 0vw 2vw !important;
   }
   .flex-column {
-  margin-top: 0 !important;
-  font-size: 18px !important;
+    margin-top: 0 !important;
+    font-size: 18px !important;
   }
   .modal-close {
-  font-size: 30px !important;
+    font-size: 30px !important;
   }
 }
 
