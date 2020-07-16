@@ -512,7 +512,7 @@ let questions = [
   },
   {
     question: "Which character from another movie appears in the Imperial Senate in Phantom Menace?",
-    imgSrc: "assets/images/seb.jpeg",
+    imgSrc: "assets/images/senate.jpeg",
     optionA: "Gizmo",
     optionB: "Predator",
     optionC: "Xenomorph",
@@ -1032,33 +1032,33 @@ let darkQuestions = [
     icon: document.getElementsByClassName("icon4"),
   },
   {
-    question: "What is the name of Jabba's pet?",
-    imgSrc: "assets/images/j-pet.png",
-    optionA: "Salacious B. Crumb",
-    optionB: "Feisty D. Frisker",
-    optionC: "Flita R. Fricmuffin",
-    optionD: "Boba Tikkata",
-    correct: "A",
+    question: "What does “TIE” stand for in TIE Fighter?",
+    imgSrc: "assets/images/tie.jpg",
+    optionA: "Tactical Ion Engines",
+    optionB: "Tactical Ion Evader",
+    optionC: "Turbo Ion Engines",
+    optionD: "Twin Ion Engines",
+    correct: "D",
     icon: document.getElementsByClassName("icon5"),
   },
   {
-    question: "How do Tusken raiders travel?",
-    imgSrc: "assets/images/tusk.jpg",
-    optionA: "V-formation",
-    optionB: "Spread wide",
-    optionC: "Lightspeed",
-    optionD: "Straight line",
-    correct: "D",
+    question: "How many people does Darth Vader kill in The Empire Strikes Back?",
+    imgSrc: "assets/images/dv.jpg",
+    optionA: "2",
+    optionB: "3",
+    optionC: "1",
+    optionD: "4",
+    correct: "A",
     icon: document.getElementsByClassName("icon6"),
   },
   {
-    question: "What species was snoke?",
-    imgSrc: "assets/images/snoke.jpeg",
-    optionA: "Clone",
-    optionB: "Cyborg",
-    optionC: "Kaleesh",
-    optionD: "Muun",
-    correct: "A",
+    question: "How big was the exhaust port on the first death star?",
+    imgSrc: "assets/images/d-plans.png",
+    optionA: "1 meter",
+    optionB: "2 meters",
+    optionC: "3 meters",
+    optionD: "4 meters",
+    correct: "B",
     icon: document.getElementsByClassName("icon7"),
   },
   {
@@ -1072,23 +1072,23 @@ let darkQuestions = [
     icon: document.getElementsByClassName("icon8"),
   },
   {
-    question: "Name this character?",
-    imgSrc: "assets/images/blue-ele.jpg",
-    optionA: "Bov Seren",
-    optionB: "Max Rebo",
-    optionC: "Ele cofont",
-    optionD: "Nalal Peyo",
+    question: "What is the red substance found on the planet Crait?",
+    imgSrc: "assets/images/crait.jpg",
+    optionA: "Dirt",
+    optionB: "Salt",
+    optionC: "Chalk",
+    optionD: "Ash",
     correct: "B",
     icon: document.getElementsByClassName("icon9"),
   },
   {
-    question: "Name Darth Vaders first apprentice?'",
-    imgSrc: "assets/images/dv.jpg",
-    optionA: "Darth Zekron",
-    optionB: "Starkiller",
-    optionC: "Malingsar",
-    optionD: "Darth Vestro",
-    correct: "B",
+    question: "How did Darth Sidious kill his former master?",
+    imgSrc: "assets/images/palps.jpg",
+    optionA: "Poisoned him",
+    optionB: "With the force",
+    optionC: "In a duel",
+    optionD: "In his sleep",
+    correct: "D",
     icon: document.getElementsByClassName("icon10"),
   },
   ],
@@ -1171,7 +1171,8 @@ $(document).ready(function () {
 //-------randomize-questions---------
 
 function randomQuest() {
-    let randomNumber = Math.floor(Math.random() * 2); 
+    debugger;
+    let randomNumber = Math.floor(Math.random() * 5); 
     console.log()
     randomQuestion = questions[randomNumber][currentQuestion];
 }
@@ -1183,6 +1184,7 @@ let randomQuestion;
 //------question-structure-fills-the-question-and-options-----
 
 function questionStructure() {
+  debugger; 
   randomQuest();  
   let q = randomQuestion;
   qImg.innerHTML = "<img src=" + q.imgSrc + ">";
