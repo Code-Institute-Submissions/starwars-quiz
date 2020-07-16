@@ -7,24 +7,23 @@ let audio = {
     avScoreLight: new Audio("assets/audio/unfair.mp3"),
     worstScoreLight: new Audio("assets/audio/r2-scream.mp3"),
     bestScoreDark: new Audio("assets/audio/dark-power.mp3"),
-    avScoreDark: new Audio("assets/audio/VictorySound.mp3"),
+    goodScoreDark: new Audio("assets/audio/unfair.mp3"),
+    avScoreDark: new Audio("assets/audio/jabba.wav"),
     worstScoreDark: new Audio("assets/audio/dark-fail.mp3"),
-    vaderBreath: new Audio("v-breath.wav"),
+    vaderBreath: new Audio("vader.wav"),
     useForce: new Audio("use-force.mp3"),
     clickAudio: new Audio("assets/audio/blaster.mp3"),
+    closeClickAudio: new Audio("assets/audio/blast-door.mp3"),
     gameMusicDark: new Audio("assets/audio/imperial.mp3"),
     gameMusicLight: new Audio("assets/audio/themetune.mp3"),
     saberAudio: new Audio("assets/audio/saberdown.wav"),
-    isSoundMuted: false,
-    isMusicMuted: false,
-    soundEffectBtn: document.getElementById("sound-btn"),
-    musicBtn: document.getElementById("music-btn"),
+    wrongClick: new Audio("assets/audio/chewy.wav"),
+    rightClick: new Audio("assets/audio/all-easy.wav"),
 };
 
 //------Volume-button-----------------------------
 
 $(volumeButton).click(function () {
-    debugger;
    $(this).css("display", "none"); 
    $(volumeOff).css("display", "block");
    stopMusic();
@@ -33,20 +32,20 @@ $(volumeButton).click(function () {
 });
 
 $(volumeOff).click(function () {
-    debugger;
    $(this).css("display", "none"); 
    $(volumeButton).css("display", "block");
    audio.soundsOn = true;
    audio.soundsOff = false;
+   playMusic();
 });
 
 // Play-music 
 
 function playMusic() {
-    isGameActive();
-    if (audio.gameActive === true && audio.soundsOff === false) {
-        audio.gameMusic.play();
-        audio.gameMusic.loop = true;
+    if (questions === darkQuestions && audio.gameActive === true && audio.soundsOff === false) {
+        audio.gameMusicDark.play();
+    } else if (audio.gameActive === true && audio.soundsOff === false) {
+        audio.gameMusicLight.play();
     }
 }
 
@@ -82,31 +81,44 @@ function clickSound() {
 
 // Function for audio on side choosing buttons.
 
-function darkChoiceAudio() {
+let darkChooserButton = document.getElementsByClassName("dark-button");
+
+$(darkChooserButton).click(function () {
+    darkChooser();
+})
+
+function darkChooser() {
     if (audio.soundsOff === false) {
-        audio.vaderBreath.play();
+        audio.clickAudio.play();
     }
 }
 
-function lightChoiceAudio() {
+let lightChooserButton = document.getElementsByClassName("light-button");
+
+$(lightChooserButton).click(function () {
+    lightChooser();
+})
+
+function lightChooser() {
     if (audio.soundsOff === false) {
-        audio.useForce.play();
+        audio.clickAudio.play();
     }
 }
+
 
 // Function plays quiz completion music.
 
 function quizCompleteAudio() {
-    debugger;
     if (questions === darkQuestions && audio.soundsOff === false) {
         darkFinishAudio();
-    } else if (audio.soundsOff === false) {
+    } else if (questions === questions && audio.soundsOff === false) {
         lightFinishAudio();
     }
 }
 
+// Light-side-score-audio
+
 function lightFinishAudio() {
-    debugger;
     if (score >= 9) {
         topScoreLight();
     } else if (score >= 7) {
@@ -140,7 +152,86 @@ function avScoreLight() {
 }
 
 function badScoreLight() {
+    stopMusic();
     if (audio.soundsOff === false) {
         audio.worstScoreLight.play();
+    }
+}
+
+// Dark-side-score-audio
+
+function darkFinishAudio() {
+    if (score >= 9) {
+        topScoreDark();
+    } else if (score >= 7) {
+        goodScoreDark();
+    } else if (score >= 5) {
+        avScoreDark();
+    } else {
+        badScoreDark();
+    }
+}
+
+function topScoreDark() {
+    stopMusic();
+    if (audio.soundsOff === false) {
+        audio.bestScoreDark.play();
+    }
+}
+
+function goodScoreDark() {
+    stopMusic();
+    if (audio.soundsOff === false) {
+        audio.goodScoreDark.play();
+    }
+}
+
+function avScoreDark() {
+    stopMusic();
+    if (audio.soundsOff === false) {
+        audio.avScoreDark.play();
+    }
+}
+
+function badScoreDark() {
+    stopMusic();
+    if (audio.soundsOff === false) {
+        audio.worstScoreDark.play();
+    }
+}
+
+// Saber-hover-audio
+
+function saberHover() {
+    if (audio.soundsOff === false) {
+        audio.saberAudio.play();
+    }
+}
+
+// Button-click-sound-effects
+
+function laserButton() {
+    if (audio.soundsOff === false) {
+        audio.clickAudio.play();
+    }
+}
+
+function closeButton() {
+    if (audio.soundsOff === false) {
+        audio.closeClickAudio.play();
+    }
+}
+
+// Wrong-or-right-click-audio
+
+function rightAudio() {
+    if (audio.soundsOff === false && currentQuestion <= 8) {
+        audio.rightClick.play();
+    }
+}
+
+function wrongAudio() {
+    if (audio.soundsOff === false && currentQuestion <= 8) {
+        audio.wrongClick.play();
     }
 }

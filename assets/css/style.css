@@ -194,7 +194,7 @@ body {
 }
 
 .volume-container {
-  width: 100%;
+  width: 50px;
   bottom: 0;
   position: absolute;
 }

@@ -36,14 +36,12 @@ function lightSideButton() {
   $(sideChooser).hide();
   $(quizPage).show();
   $(startContain).show();
-  lightChoiceAudio();
 }
 
 function darkSideButton() {
   $(sideChooser).hide();
   $(quizPage).show();
   $(startContain).show();
-  darkChoiceAudio();
   questions = darkQuestions;
 }
 
@@ -179,7 +177,7 @@ let questions = [
   },
   {
     question: "Who is surrounded by droids before asking 'Do we have a Plan B'?",
-    imgSrc: "assets/images/sur-droidy.jpg",
+    imgSrc: "assets/images/droidy.jpg",
     optionA: "Anakin Skywalker",
     optionB: "Han Solo",
     optionC: "Ahsoka Tano",
@@ -222,7 +220,7 @@ let questions = [
   {
     question: "Fill in the blanks of Luke's line 'Not unless you can [blank],  [blank] or [blank]'.?",
     imgSrc: "assets/images/luke-pc.jpg",
-    optionA: "Disrupt time, destroy the harvest or fly me off this planet.",
+    optionA: "Disrupt destroy the harvest or fly me off this planet.",
     optionB: "Stop time, end the harvest or triangulate me off this rock.",
     optionC: "Speed up time, stop the harvest or teleport me off this rock.",
     optionD: "Alter time, speed up the harvest or teleport me off this rock.",
@@ -253,7 +251,7 @@ let questions = [
     question:
       "What are Leia's final words to Han?'",
     imgSrc: "assets/images/leia.jpg",
-    optionA: "No matter how much we fought, i've always hated watching you leave",
+    optionA: "I've always hated watching you leave",
     optionB: "If you see our son, bring him home",
     optionC: "Stop that, my hands are dirty",
     optionD: "May the force be with you",
@@ -278,7 +276,7 @@ let questions = [
     imgSrc: "assets/images/maz.jpeg",
     optionA: "I know the force",
     optionB: "Where's my boyfriend",
-    optionC: "I'm looking at the eyes of a man that wants to run",
+    optionC: "I’ve seen evil take many forms",
     optionD: "We all need to fight",
     correct: "D",
     icon: document.getElementsByClassName("icon2"),
@@ -901,7 +899,7 @@ let darkQuestions = [
     optionB: "To Moroband",
     optionC: "To Palpatine",
     optionD: "To Exegol",
-    correct: "A",
+    correct: "D",
     icon: document.getElementsByClassName("icon1"),
   },
   {
@@ -1213,12 +1211,14 @@ function progressStructure() {
 function correctAnswer() {
   let qIcon = randomQuestion.icon;
   $(qIcon).css("color", "blue");
+  rightAudio();
   console.log();
 }
 
 function wrongAnswer() {
   let qIcon = randomQuestion.icon;
   $(qIcon).css("color", "red");
+  wrongAudio();
   console.log();
 }
 
@@ -1277,7 +1277,7 @@ $(start).click(function () {
   questionStructure();
   $(quiz).show();
   $(progress).show();
-  audio.gameActive === true;
+  audio.gameActive = true;
   backgroundMusic();
 });
 
@@ -1308,11 +1308,11 @@ function scoreStructure() {
     "<p>You are.....</p><img src=" + img + "><p>" + scorePercentage + "</p>"
   );
   $(share).show();
-  audio.gameActive === false;
+  audio.gameActive = false;
   quizCompleteAudio();
   $(".exit-score").show();
   }
-  function darkScoreStructure() {
+  function darkScoreStructure() {  
     if (score == 10) {
     var img = "assets/images/p-best.jpg";
   } else if (score >= 9) {
@@ -1331,6 +1331,8 @@ function scoreStructure() {
     "<p>You are.....</p><img src=" + img + "><p>" + scorePercentage + "</p>"
   );
   $(share).show();
+  audio.gameActive = false;
+  quizCompleteAudio();
   $(".exit-score").show();
   }
 }
@@ -1343,10 +1345,12 @@ let exitModal = document.getElementsByClassName("modal-close");
 
 $(instruct).click(function () {
   $(tutorial).show();
+  laserButton();
 });
 
 $(exitModal).click(function () {
   $(tutorial).hide();
+  closeButton();
 });
 
 //------Exit-button-----------------------------

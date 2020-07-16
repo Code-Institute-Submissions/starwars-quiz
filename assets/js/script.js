@@ -2,12 +2,14 @@
 
 $(".light-side").hover(function(){
   $(".blue-saber").css("visibility", "visible");
+  saberHover();
   }, function(){
   $(".blue-saber").css("visibility","hidden");
 });
 
 $(".dark-side").hover(function(){
   $(".red-saber").css("visibility", "visible");
+  saberHover();
   }, function(){
   $(".red-saber").css("visibility","hidden");
 });
