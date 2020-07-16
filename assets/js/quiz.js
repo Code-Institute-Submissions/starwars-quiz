@@ -1103,7 +1103,7 @@ let darkQuestions = [
 $(document).ready(function () {
   $(".start-how").hover(
     function () {
-      $(this).css("background-color", "#BFB908");
+      $(this).css("background-color", "#B69118");
       $(this).css("color", "white");
     },
     function () {
@@ -1119,7 +1119,7 @@ $(document).ready(function () {
   if ($(window).width() > 1000) {
     $("#a").hover(
       function () {
-        $(this).css("background-color", "#990000");
+        $(this).css("background-color", "#2A76B0");
         $(this).css("color", "white");
       },
       function () {
@@ -1133,7 +1133,7 @@ $(document).ready(function () {
   if ($(window).width() > 1000) {
     $("#b").hover(
       function () {
-        $(this).css("background-color", "#990000");
+        $(this).css("background-color", "#2A76B0");
         $(this).css("color", "white");
       },
       function () {
@@ -1147,8 +1147,8 @@ $(document).ready(function () {
   if ($(window).width() > 1000) {
     $("#c").hover(
       function () {
-        $(this).css("background-color", "#990000");
-        $(this).css("color", "white");
+        $(this).css("background-color", "#2A76B0");
+        $(this).css("color", "#FFFFFF");
       },
       function () {
         $(this).css("background-color", "transparent");
@@ -1161,7 +1161,7 @@ $(document).ready(function () {
   if ($(window).width() > 1000) {
     $("#d").hover(
       function () {
-        $(this).css("background-color", "#990000");
+        $(this).css("background-color", "#2A76B0");
         $(this).css("color", "white");
       },
       function () {

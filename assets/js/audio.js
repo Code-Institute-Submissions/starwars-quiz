@@ -84,26 +84,19 @@ function clickSound() {
 let darkChooserButton = document.getElementsByClassName("dark-button");
 
 $(darkChooserButton).click(function () {
-    darkChooser();
-})
-
-function darkChooser() {
     if (audio.soundsOff === false) {
         audio.clickAudio.play();
     }
-}
+})
+
 
 let lightChooserButton = document.getElementsByClassName("light-button");
 
 $(lightChooserButton).click(function () {
-    lightChooser();
-})
-
-function lightChooser() {
     if (audio.soundsOff === false) {
         audio.clickAudio.play();
     }
-}
+})
 
 
 // Function plays quiz completion music.
