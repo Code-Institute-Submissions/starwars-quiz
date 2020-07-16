@@ -948,7 +948,7 @@ let darkQuestions = [
     optionA: "V-formation",
     optionB: "Spread wide",
     optionC: "Lightspeed",
-    optionD: "Straight line",
+    optionD: "Single file",
     correct: "D",
     icon: document.getElementsByClassName("icon6"),
   },
