@@ -304,7 +304,7 @@ let questions = [
   },
   {
     question: "What giant pig creature does Finn share a drink with on Jakku?",
-    imgSrc: "assets/images/c3p.jpg",
+    imgSrc: "assets/images/finn.jpg",
     optionA: "Anooba",
     optionB: "Jakdore",
     optionC: "Wampa",
