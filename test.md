@@ -155,6 +155,8 @@
 <p>Bug Discovered - <strong>A large ammount of blank space at the bottom of the modal on larger screen sizes</strong></p>
 <ul>
 <li>The ammount of space is obvious to user, as the text was small and hard to read and would need to zoom in to see it.</li>
+</ul>
+</ul>
 <p>Fix Applied:</p>
 <ul>
 <li>This issue was fixed by creating a custome screen width in dev tools to resemble a large monitor, and adjusting the size with css so the text was easier to read and filled up more space on the screen.</li>
