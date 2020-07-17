@@ -164,20 +164,17 @@
 </ul>
 <h4><a id="user-content-game-area" class="anchor" aria-hidden="true" href="#game-area"></a>Game Area</h4>
 <p>The game area is main feature of the site and I thoroughly tested that each level displays correctly on the various devices as well as ensuring the game play is smooth and easily viewable by the user no matter the orientation of the device.</p>
-<ul>
-<li>
+<br>
 <p>Bug Discovered - <strong>Wrong or Right Answer Sound &amp; Score Audio</strong>:</p>
 <ul>
 <li>On the last question, when clicking your answer, sound of the answer would overlap the sound given for the score structure. This caused the user not being able to hear either sound which resulted in mixture of noises.</li>
 </ul>
-</li>
-<li>
+<br>
 <p>Fix Applied:</p>
 <ul>
 <li>Too fix this issue I had to go into my audio.js file and add an if statement <code>if (currentQuestion <= 8)</code> too the answer sound, so it would only play if it was on the second to last question or less.</li>
 </ul>
-</li>
-</ul>
+<br>
 <h4><a id="user-content-google-dev-tools---lighthouse-audit" class="anchor" aria-hidden="true" href="#google-dev-tools---lighthouse-audit"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Google Dev tools - Lighthouse Audit</h4>
 <p>The below screenshots have been taken use the Google Chrome Dev Tools Lighthouse Audit functionality that shows I have almost 100% for all their scoring criteria.</p>
 <h5><a id="user-content-desktop-audit-result" class="anchor" aria-hidden="true" href="#desktop-audit-result"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Desktop Audit Result</h5>
