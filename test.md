@@ -152,19 +152,14 @@
 </ul>
 <h5><a id="user-content-modals" class="anchor" aria-hidden="true" href="#modals"></a>Instruction Modal</h5>
 <p>I tested the instruction modal on a variety of screen sizes, and found on a mobile phone, it worked better filling the entire screen, instead of just a pop up.</p>
-<p>Bug Identified - <strong>A large ammount of blank space at the bottom of the modal on larger screen sizes</strong></p>
+<p>Bug Discovered - <strong>A large ammount of blank space at the bottom of the modal on larger screen sizes</strong></p>
 <ul>
 <li>The ammount of space is obvious to user, as the text was small and hard to read and would need to zoom in to see it.</li>
 <p>Fix Applied:</p>
 <ul>
 <li>This issue was fixed by creating a custome screen width in dev tools to resemble a large monitor, and adjusting the size with css so the text was easier to read and filled up more space on the screen.</li>
 </ul>
-</li>
-<li>
-<p>Bug Discovered - <strong>Wrong or Right Answer Sound &amp; Score Audio</strong>:</p>
-<p>On the last question, when clicking your answer, sound of the answer would overlap the sound given for the score structure.
-This caused the user not being able to hear either sound which resulted in mixture of noises.</p>
-</li>
+</ul>
 <h4><a id="user-content-game-area" class="anchor" aria-hidden="true" href="#game-area"></a>Game Area</h4>
 <p>The game area is main feature of the site and I thoroughly tested that each level displays correctly on the various devices as well as ensuring the game play is smooth and easily viewable by the user no matter the orientation of the device.</p>
 <ul>
