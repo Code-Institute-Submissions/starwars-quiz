@@ -79,7 +79,7 @@
 <p>I want to have easy access to the game, instructions if needed, and have control over the audio coming from the site.</p>
 </li>
 <li>
-<p>I dont want to make choices that will effect the game and create a personal outcome, otherwise I will loose interest quickly.</p>
+<p>I want to make choices that will effect the game and create a personal outcome, otherwise I will loose interest quickly.</p>
 </li>
 <li>
 <p>I want to be able to quit the game with ease and choose a different pathway.</p>
@@ -266,11 +266,11 @@
 <p>To deploy Star Wars Quiz from its <a href="https://github.com/Andy-Osborne/Dwarf-Match">repository in GitHub</a>, I completed the following steps:</p>
 <ol>
 <li>Log into GitHub</li>
-<li>From the list of repositories, select Andy-Osborne/Dwarf-Match.</li>
+<li>From the list of repositories, select <a href="https://github.com/lewejuice/starwars-quiz"><strong>lewejuice/starwars-quiz</strong></a>.</li>
 <li>Click on the settings button located just below the Fork option.</li>
 <li>Scroll down the new page to GitHub Pages.</li>
 <li>Select Master Branch from the dropdown menu.</li>
-<li>After selecting Master Branch, the page will refresh and Dwarf Match is deployed.</li>
+<li>After selecting Master Branch, the page will refresh and <a href="https://github.com/lewejuice/starwars-quiz/"><strong>Star Wars Quiz</strong></a> is deployed.</li>
 <li>If you scroll back down to the GitHub Pages section after the page refreshes, you can grab your live link to your deployed site.</li>
 </ol>
 <h3><a id="user-content-to-run-locally" class="anchor" aria-hidden="true" href="#to-run-locally"></a>To Run Locally</h3>
