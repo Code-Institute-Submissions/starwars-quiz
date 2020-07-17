@@ -142,6 +142,7 @@
 </li>
 <li>
 <p>Another tool which improved the sites responsiveness to multiple screen sizes was the online CSS <a href="https://autoprefixer.github.io/" rel="nofollow">Autoprefixer</a>.</p>
+</ul>
 <ul>
 <li>
 <p>Bug Identified - <strong>Lightsaber Button Glitch</strong></p>
