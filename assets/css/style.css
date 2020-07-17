@@ -292,7 +292,16 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .heading-container {
+      padding-top: 250px !important;
+  }
+}
+
 @media (max-width: 700px) {
+  .heading-container {
+      padding-top: 150px !important;
+  }  
   .skip-button {
     width: 80px !important;
   }

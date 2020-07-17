@@ -116,111 +116,66 @@
 </ul>
 </li>
 </ol>
-<h2><a id="user-content-manual-testing" class="anchor" aria-hidden="true" href="#manual-testing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Manual Testing</h2>
-<p>I have detailed the manual testing undertaken during the development stage to ensure that all aspects of the game work as intended.</p>
-<h3><a id="user-content-responsive-design-testing" class="anchor" aria-hidden="true" href="#responsive-design-testing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Responsive Design Testing</h3>
-<p>During the development and testing phase of the site, I used Google Chrome and Google Canary Dev Tools to test the layout as I built my code and used the various screen sizes to ensure that it displayed correctly and that elements of the size displayed correctly and easily viewable by the user.</p>
+<h2><a id="user-content-manual-testing" class="anchor" aria-hidden="true" href="#manual-testing"></a>Manual Testing</h2>
+<p>I have included the manual testing processes which took place during the development stage to ensure that all aspects of the quiz work as intended.</p>
+<h3><a id="user-content-responsive-design-testing" class="anchor" aria-hidden="true" href="#responsive-design-testing"></a>Responsive Design Testing</h3>
+<p>During the development and testing phase of the site, I used Google Chrome Dev Tools to test the layout as I built my code and viewed each stage on different screen displays to makesure the quiz worked across multiple platforms.</p>
 <p>All testing was performed using:</p>
 <ul>
 <li>Google Chrome</li>
-<li>Google Canary</li>
-<li>Opera</li>
-<li>Microsoft Edge</li>
+<li>Explorer</li>
 <li>Mozilla Firefox</li>
-<li>Safari (on iPhone &amp; iPad)</li>
-<li>Desktop - I tested the display on three different screen sizes.</li>
-<li>Mobile Phones - All emulated devices offered in Google &amp; Firefox Dev Tools as well as physical devices such as Samsung S9 and iPhone X.</li>
-<li>Tablets - All emulated devices offered in Google &amp; Firefox Dev Tools as well as physical devices such as the iPad Air and iPad Pro.</li>
+<li>Safari</li>
+<li>Desktop - Two different screen sizes.</li>
+<li>Mobile Phones - All inclusive devices provided by Chrome dev tools and on an actual iPhone 11 pro.</li>
+<li>Tablets - All inclusive devices provided by Chrome Dev Tools as well as an iPad Air.</li>
 </ul>
-<h4><a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Overview</h4>
-<p>This game was intended to be responsive to all user media devices such as mobile phones, tablets, desktops.</p>
-<p>To ensure the site and game board remains responsive, I tested the layout at every stage of development on the various screen sizes within the Chrome Dev tools and corrected the styling of the elements and added Media Queries so that the design will adjust to device being viewed. As this is a game, users may decide play it with a landscape orientation rather than portrait so I tailored additional Media Queries with this in mind.</p>
-<p>The overall site was designed using the Bootstrap Framework to make use of their flex layout. In addition to this I used relative measurements in my styling where possible, rather than absolute measurements to allow the elements to adapt to screen size changes before a new media query would need to be introduced.</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/ac68fa509a14c760a5c3292cfaf5c4c4308ddd1b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f616e64792d6f73626f726e652f696d6167652f75706c6f61642f76313538383038353431382f44776172662532304d617463682f496d616765732f526573706f6e736976655f44657369676e5f4f766572766965775f6e79637a67692e706e67"><img src="https://camo.githubusercontent.com/ac68fa509a14c760a5c3292cfaf5c4c4308ddd1b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f616e64792d6f73626f726e652f696d6167652f75706c6f61642f76313538383038353431382f44776172662532304d617463682f496d616765732f526573706f6e736976655f44657369676e5f4f766572766965775f6e79637a67692e706e67" alt="Responsive Testing Summary Table" data-canonical-src="https://res.cloudinary.com/andy-osborne/image/upload/v1588085418/Dwarf%20Match/Images/Responsive_Design_Overview_nyczgi.png" style="max-width:100%;"></a></p>
-<h5><a id="user-content-landing-page" class="anchor" aria-hidden="true" href="#landing-page"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Landing Page</h5>
-<p>I continuously tested the layout of the landing page throughout the development phase of the project and after each edit, I ensured that the layout and responsiveness of the website remained consistent.</p>
+<h4><a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"></a>Overview</h4>
+<p>Star Wars Quiz was designed and built to be displayed and used on multiple devices such as mobile phones, tablets, desktops.</p>
+<p>Throughout the testing I made notes on what elements needed work and altered them accordingly.</p>
+<p>The main quiz page was designed using the Bootstrap Framework, which was extremely useful in honing the sites full flexibility. Some elements had to be made to measure, instead of letting the element size changing itself to adapt to a new space.</p>
+<h5><a id="user-content-landing-page" class="anchor" aria-hidden="true" href="#landing-page"></a>Landing Page</h5>
+<p>The landing page was a tricky obstical, due to it's animated text, I had to makesure the time span wasn't too long for the user, while also making sure the full text displayed, I managed to change the letter and line spacing to achieve the desired outcome.</p>
 <ul>
 <li>
-<p>I tested that all writing, buttons and images on the landing page remained readable by the user and it adapted accordingly to the device it was being viewed on.</p>
+<p>I tested all text and buttons on the landing and home page so that it remained clearly visible on multiple platforms.</p>
 </li>
 <li>
-<p>Where the responsiveness of the website began to degrade, I created a media query to deal with any issues.</p>
-</li>
-<li>
-<p>In order to ensure that the site retained cross-browser responsiveness, I used the online CSS <a href="https://autoprefixer.github.io/" rel="nofollow">Autoprefixer</a>.</p>
+<p>Another tool which improved the sites responsiveness to multiple screen sizes was the online CSS <a href="https://autoprefixer.github.io/" rel="nofollow">Autoprefixer</a>.</p>
 <ul>
 <li>
-<p>Bug Identified - <strong>Background Animation Glitch</strong></p>
+<p>Bug Identified - <strong>Lightsaber Button Glitch</strong></p>
+<li>The animation used for the 'light' and 'dark' buttons had a problem on screens smaller than desktop, where the light saber would travel out of alignment.</li>
+<p>Fix Applied:</p>
+<p>In order to correct this issue I had to remove them on smaller screen sizes, while increasing the button size using the CSS <code>@media (min-width:)</code> which although, did make the smalller screen version a little less interactive, but it was more functional and asthetically pleasing.</li>
+<h5><a id="user-content-modals" class="anchor" aria-hidden="true" href="#modals"></a>Instruction Modal</h5>
+<p>I tested the instruction modal on a variety of screen sizes, and found on a mobile phone, it worked better filling the entire screen, instead of just a pop up.</p>
+<p>Bug Identified - <strong>A large ammount of blank space at the bottom of the modal on larger screen sizes</strong></p>
 <ul>
-<li>The animation used for the background had an unintended glitch where it would would complete the cycle and then jump back to 0% and momentarily show a white background.</li>
-</ul>
-</li>
-<li>
+<li>The ammount of space is obvious to user, as the text was small and hard to read and would need to zoom in to see it.</li>
 <p>Fix Applied:</p>
 <ul>
-<li>In order to correct this issue I added and additional rule to the CSS style sheet <code>animation-direction: alternate</code> which allowed the animation to smoothly slide from one side of the screen and back again.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h5><a id="user-content-modals" class="anchor" aria-hidden="true" href="#modals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Modals</h5>
-<p>I tested each modal multiple times on the various devices/browsers mentioned previously to ensure that they retained a consistent flow that was suitable to the site.</p>
-<ul>
-<li>
-<p>Bug Identified - <strong>Conflict with hover effect &amp; <code>max-width: fit-content</code></strong></p>
-<ul>
-<li>When I applied the <code>transform: scale(1.05)</code> CSS style rule, it ended up conflicting with the <code>max-width: fit-content</code> and caused the modal to continuously shrink and expand when hovering over a button. This bug primarily impacted Google Chrome and Mozilla Firefox, and was not present in Google Canary.</li>
+<li>This issue was fixed by creating a custome screen width in dev tools to resemble a large monitor, and adjusting the size with css so the text was easier to read and filled up more space on the screen.</li>
 </ul>
 </li>
 <li>
-<p>Fix Applied:</p>
-<ul>
-<li>In order to correct this issue, I amended the <code>max-width</code> style rule to have a relative value and style it accordingly.</li>
-</ul>
+<p>Bug Discovered - <strong>Wrong or Right Answer Sound &amp; Score Audio</strong>:</p>
+<p>On the last question, when clicking your answer, sound of the answer would overlap the sound given for the score structure.
+This caused the user not being able to hear either sound which resulted in mixture of noises.</p>
 </li>
-<li>
-<p>Bug Identified - <strong>Excess white space between background image and footer</strong></p>
-<ul>
-<li>This bug only impacted the older version of the Microsoft Edge browser when a modal is launched. The white space is not immediately apparent to the user as the footer sticks to the bottom of the viewport at all times and there is no gap on their current viewport. They need to scroll down to see it.</li>
-</ul>
-</li>
-<li>
-<p>Fix Applied:</p>
-<ul>
-<li>This issue was resolved by updating to the latest version of the Edge Browser however; remains unfixed for users on older versions.</li>
-</ul>
-</li>
-<li>
-<p>Bug Discovered - <strong>Tutorial &amp; Sound Modal During Victory Modal</strong>:</p>
-<ul>
-<li>
-<p>When completing a level within the game, the Victory Modal launched as expected however; I was also able to launch the Tutorial and Audio Modals as well. The Audio Modal was able to launch on top of the Victory Modal where the Tutorial Modal would launch underneath the Victory Modal. <strong>This issue was prior to the fix documented above</strong></p>
-<p>I considered disabling the Audio and Tutorial Modal buttons whilst the Victory Modal is active however; I did not want to limit the users actions.
-I discovered that I could launch multiple modals at the same time. For example, when the Audio Modal was open, I could also open the Tutorial Modal and this would open up behind the Audio Modal. This was not an intended function.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Fix Applied:</p>
-<ul>
-<li>In order to fix this unintended bug, I edited the CSS style rule for the Victory Modal to lessen its <code>z-index</code> value so that the Audio Modal and Tutorial Modal will launch above it.</li>
-</ul>
-</li>
-</ul>
-<h4><a id="user-content-game-area" class="anchor" aria-hidden="true" href="#game-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Game Area</h4>
+<h4><a id="user-content-game-area" class="anchor" aria-hidden="true" href="#game-area"></a>Game Area</h4>
 <p>The game area is main feature of the site and I thoroughly tested that each level displays correctly on the various devices as well as ensuring the game play is smooth and easily viewable by the user no matter the orientation of the device.</p>
 <ul>
 <li>
-<p>Bug Discovered - <strong>Playing Card Front Face Sizing</strong></p>
+<p>Bug Discovered - <strong>Wrong or Right Answer Sound &amp; Score Audio</strong>:</p>
 <ul>
-<li>When testing the play functionality on the various devices, the front faces of the cards would sometimes be too big for the <code>tile</code> which meant that the overflow of the character would be cropped. This would negatively impact the users experience whilst playing the game.</li>
+<li>On the last question, when clicking your answer, sound of the answer would overlap the sound given for the score structure. This caused the user not being able to hear either sound which resulted in mixture of noises.</li>
 </ul>
 </li>
 <li>
 <p>Fix Applied:</p>
 <ul>
-<li>In order to fix this issue, I used GIMP to create a blank canvas with the dimensions of 200 x 162 and resized each image individually to fit within this size and apply a uniform size. In addition to this, I edited the <code>tile</code> CSS rule for each media query to ensure that the <code>tile</code> retains a good dimension ration.</li>
+<li>Too fix this issue I had to go into my audio.js file and add an if statement <code>if (currentQuestion <= 8)</code> too the answer sound, so it would only play if it was on the second to last question or less.</li>
 </ul>
 </li>
 </ul>

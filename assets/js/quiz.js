@@ -324,12 +324,12 @@ let questions = [
     icon: document.getElementsByClassName("icon6"),
   },
   {
-    question: "Fill in the blanks of the line 'You will never find a more [blank] of [blank] and [blank].'",
+    question: "Where will you 'never find a more wretched hive of scum and villainy'",
     imgSrc: "assets/images/ben-ken.jpeg",
-    optionA: "You will never find a more vile swarm of scum and villainy.",
-    optionB: "You will never find a more grim gang of filth and gangsters.",
-    optionC: "You will never find a more gruesome group of filth and villainy.",
-    optionD: "You will never find a more wretched hive of scum and villainy.",
+    optionA: "Tuanul Village",
+    optionB: "Cloud City",
+    optionC: "Theed",
+    optionD: "Mos Eisley",
     correct: "D",
     icon: document.getElementsByClassName("icon7"),
   },
@@ -893,7 +893,7 @@ let darkQuestions = [
   //next-set-of-questions
   [q4 =
   {
-    question: "What does a sith wayfinder lead you?",
+    question: "Where would a sith wayfinder lead you?",
     imgSrc: "assets/images/silencer.png",
     optionA: "To jedi",
     optionB: "To Moroband",
