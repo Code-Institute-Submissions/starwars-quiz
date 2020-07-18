@@ -516,6 +516,42 @@ body {
 	padding-bottom: 10px;
 }
 
+/*---------Above-2000px-------*/
+
+@media (min-width: 2000px) {
+	.heading-container {
+		padding-top: 15vh;
+	}
+	#counter {
+		font-size: 10vw;
+		font-family: "Staatliches", cursive;
+	}
+	.start-how i {
+		font-size: 6vw !important;
+	}
+    .tutorial-head h2 {
+        font-size: 2.5vw;
+    }
+    .flex-column ul {
+    margin-top: 4vh;
+    font-size: 2vw;
+    }
+    .progr {
+    font-size: 4vw !important;
+    }
+    .exit-button i {
+    font-size: 4vw;
+    }
+    .volume-container {
+	width: 5vw;
+    }
+    .volume-button {
+	font-size: 4vw;
+    }
+    .volume-off-button {
+	font-size: 4vw;
+    }
+}
 
 /*---------Above-1024-px-------*/
 
@@ -551,7 +587,7 @@ body {
 		font-family: "Staatliches", cursive;
 	}
 	.start-how i {
-		font-size: 60px !important;
+		font-size: 60px;
 	}
 }
 
