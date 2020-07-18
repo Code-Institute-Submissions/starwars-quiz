@@ -168,7 +168,7 @@ body {
   text-align: center;
 }
 
-#side-option {
+.side-option {
   font-size: 50px;
   min-width: 100%;
   padding: 0;
@@ -526,25 +526,11 @@ body {
     font-family: "Staatliches", cursive;
   }
 
-  #a {
+  .quiz-answers {
     border: solid 3px;
     width: 49vw;
     height: auto;
   }
-  #b {
-    border: solid 3px;
-    width: 49vw;
-    height: auto;
-  }
-  #c {
-    border: solid 3px;
-    width: 49vw;
-    height: auto;
-  }
-  #d {
-    border: solid 3px;
-    width: 49vw;
-    height: auto;
   }
   #counter {
     font-size: 3vw;
@@ -606,22 +592,7 @@ body {
     margin: 0;
   }
 
-  #a {
-    border: solid 3px;
-    width: 100%;
-    height: auto;
-  }
-  #b {
-    border: solid 3px;
-    width: 100%;
-    height: auto;
-  }
-  #c {
-    border: solid 3px;
-    width: 100%;
-    height: auto;
-  }
-  #d {
+  .quiz-answers {
     border: solid 3px;
     width: 100%;
     height: auto;
@@ -661,22 +632,7 @@ body {
     font-family: "Staatliches", cursive;
     text-align: center;
   }
-  #a {
-    border: solid 3px;
-    width: 100%;
-    height: auto;
-  }
-  #b {
-    border: solid 3px;
-    width: 100%;
-    height: auto;
-  }
-  #c {
-    border: solid 3px;
-    width: 100%;
-    height: auto;
-  }
-  #d {
+  .quiz-answers {
     border: solid 3px;
     width: 100%;
     height: auto;
@@ -783,22 +739,7 @@ body {
     text-align: center;
   }
 
-  #a {
-    border: solid 3px;
-    width: 100%;
-    height: auto;
-  }
-  #b {
-    border: solid 3px;
-    width: 100%;
-    height: auto;
-  }
-  #c {
-    border: solid 3px;
-    width: 100%;
-    height: auto;
-  }
-  #d {
+  .quiz-answers {
     border: solid 3px;
     width: 100%;
     height: auto;

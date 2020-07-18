@@ -30,6 +30,7 @@ let volumeButton = document.getElementsByClassName("volume-button");
 let volumeOff = document.getElementsByClassName("volume-off-button");
 
 let sideChooser = document.getElementsByClassName("selection-heading");
+
 //------------choose-side-function-------
 
 function lightSideButton() {
@@ -1117,49 +1118,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   if ($(window).width() > 1000) {
-    $("#a").hover(
-      function () {
-        $(this).css("background-color", "#2A76B0");
-        $(this).css("color", "white");
-      },
-      function () {
-        $(this).css("background-color", "transparent");
-        $(this).css("color", "#feda4a");
-      }
-    );
-  }
-});
-$(document).ready(function () {
-  if ($(window).width() > 1000) {
-    $("#b").hover(
-      function () {
-        $(this).css("background-color", "#2A76B0");
-        $(this).css("color", "white");
-      },
-      function () {
-        $(this).css("background-color", "transparent");
-        $(this).css("color", "#feda4a");
-      }
-    );
-  }
-});
-$(document).ready(function () {
-  if ($(window).width() > 1000) {
-    $("#c").hover(
-      function () {
-        $(this).css("background-color", "#2A76B0");
-        $(this).css("color", "#FFFFFF");
-      },
-      function () {
-        $(this).css("background-color", "transparent");
-        $(this).css("color", "#feda4a");
-      }
-    );
-  }
-});
-$(document).ready(function () {
-  if ($(window).width() > 1000) {
-    $("#d").hover(
+    $(".quiz-answers").hover(
       function () {
         $(this).css("background-color", "#2A76B0");
         $(this).css("color", "white");
