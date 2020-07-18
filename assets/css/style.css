@@ -5,6 +5,8 @@
 * Browsers: last 4 version
 */
 
+/*-----------------Body------------------*/
+
 body {
 	width: 100%;
 	height: 100%;
@@ -118,10 +120,14 @@ body {
 	margin: 0;
 }
 
+/*-----------------Field-of-star-background-animation------------------*/
+
 #field {
 	position: fixed;
 	z-index: -1;
 }
+
+/*-----------------Home-page-Title------------------*/
 
 .heading-container {
 	width: 100%;
@@ -143,6 +149,8 @@ body {
 	margin-top: 20vh;
 	text-align: center;
 }
+
+/*-----------------Side-choosing-options------------------*/
 
 .side-option {
 	font-size: 50px;
@@ -200,11 +208,15 @@ body {
 	padding: 0;
 }
 
+/*-----------------Bootstrap-container-------------------*/
+
 .container {
 	margin-left: 0;
 	margin-right: 0;
 	width: 100%;
 }
+
+/*-----------------Audio-on/off-------------------*/
 
 .volume-container {
 	width: 50px;
@@ -227,6 +239,8 @@ body {
 	font-size: 35px;
 }
 
+/*-----------------Landing-and-home-page-below-1130px------------------*/
+
 @media (max-width: 1130px) {
 	.skip-button {
 		width: 100px;
@@ -239,6 +253,9 @@ body {
 		word-spacing: 5px;
 		letter-spacing: 3px;
 	}
+
+    /*-----------------Side-choosing-buttons-for-smaller-screens------------------*/
+
 	.side-option {
 		display: none;
 	}
@@ -268,11 +285,15 @@ body {
 	}
 }
 
+/*---------------Home-page-title-under-1024px------------------*/
+
 @media (max-width: 1024px) {
 	.heading-container {
 		padding-top: 250px;
 	}
 }
+
+/*---------------Landing-and-home-page-title-under-700px------------------*/
 
 @media (max-width: 700px) {
 	.heading-container {
@@ -316,6 +337,8 @@ body {
 	}
 }
 
+/*---------------Star-wars themed-crawling-intro-below-600px------------------*/
+
 @media (max-width: 600px) {
 	.crawl-p {
 		font-size: 50px;
@@ -325,14 +348,17 @@ body {
 	}
 }
 
+/*---------------Star-wars themed-crawling-intro-below-500px------------------*/
+
 @media (max-width: 500px) {
 	.crawl-p {
-		font-size: 50px;
 		word-spacing: 2px;
 		letter-spacing: 1px;
 		line-height: 1.5;
 	}
 }
+
+/*---------------Star-wars themed-crawling-intro-below-400px------------------*/
 
 @media (max-width: 400px) {
 	.crawl-p {
@@ -342,6 +368,8 @@ body {
 		line-height: 1.3;
 	}
 }
+
+/*---------------Quiz-side-option-buttons-above-1130px------------------*/
 
 @media (min-width: 1130px) {
 	.sm-light-button-container {
@@ -358,6 +386,8 @@ body {
 	}
 }
 
+/*---------------Quiz-side-option-buttons-above-1200px------------------*/
+
 @media (min-width: 1200px) {
 	.dark-button-container {
 		padding-top: 1vh;
@@ -366,6 +396,8 @@ body {
 		padding-top: 1vh;
 	}
 }
+
+/*---------------Quiz-side-option-buttons-above-1300px------------------*/
 
 @media (min-width: 1300px) {
 	.dark-button-container {
@@ -386,6 +418,8 @@ body {
 #quiz-page {
 	display: none;
 }
+
+/*---------------Instruction-Start-Exit-buttons------------------*/
 
 #start-container {
 	width: 100%;
@@ -410,6 +444,8 @@ body {
 .start-how i {
 	font-size: 40px;
 }
+
+/*---------------Quiz-question-page------------------*/
 
 #quiz {
 	display: none;
@@ -445,6 +481,8 @@ body {
 	display: none;
 }
 
+/*---------------Sharaholic-API------------------*/
+
 #sharer {
 	display: none;
 }
@@ -452,6 +490,8 @@ body {
 .shareaholic-share-buttons-container.shareaholic-vertical ul.shareaholic-share-buttons {
 	display: none !important;
 }
+
+/*---------------Exit-button-for-question-page------------------*/
 
 .exit-quest-container {
 	margin-top: 10px;
@@ -511,6 +551,8 @@ body {
 	}
 }
 
+/*---------------Score-page------------------*/
+
 #score-container {
 	display: none;
 	padding-top: 1vw;
@@ -524,6 +566,8 @@ body {
 	font-size: 4vw;
 	font-family: "Staatliches", cursive;
 }
+
+/*---------------Progress-icons------------------*/
 
 .progr {
 	color: #ffffff;

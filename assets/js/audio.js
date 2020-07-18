@@ -12,8 +12,6 @@ let audio = {
     goodScoreDark: new Audio("assets/audio/unfair.mp3"),
     avScoreDark: new Audio("assets/audio/jabba.wav"),
     worstScoreDark: new Audio("assets/audio/dark-fail.mp3"),
-    vaderBreath: new Audio("vader.wav"),
-    useForce: new Audio("use-force.mp3"),
     clickAudio: new Audio("assets/audio/blaster.mp3"),
     closeClickAudio: new Audio("assets/audio/blast-door.mp3"),
     gameMusicDark: new Audio("assets/audio/imperial.mp3"),
