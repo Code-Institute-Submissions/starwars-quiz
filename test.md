@@ -294,20 +294,28 @@
 <li>
 <p>No bugs were found.</p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>Random Question Function</strong></p>
+<ul>
 <li>
 <p>I tested that the random question function was working correctly, by displaying different questions each time the user plays the quiz.</p>
 </li>
 <li>
-<p>No bugs were found.</p>
+<p>No bugs were found</p>
 </li>
+</ul>
+<li>
+<p><strong>Counter Structure Function</strong></p>
+<ul>
 <li>
 <p>I tested that the counter structure function worked correctly, by counting down from twenty, and if reaching zero, will score the question wrong and move on.</p>
 </li>
 <li>
-<p>No bugs were found.</p>
+<p>No bugs were found</p>
 </li>
 </ul>
-</li>
 <li>
 <p><strong>Choose side function</strong></p>
 <ul>
@@ -317,6 +325,10 @@
 <li>
 <p>No bugs were found</p>
 </li>
+</ul>
+<li>
+<p><strong>Start Quiz function</strong></p>
+<ul>
 <li>
 <p>I tested that the start quiz function to makesure everything is rendered correctly from the click of the start button.</p>
 </li>
