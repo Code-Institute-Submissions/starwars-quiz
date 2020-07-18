@@ -491,7 +491,7 @@ let questions = [
     optionB: "Red nine",
     optionC: "Gold nine",
     optionD: "Gold leader",
-    correct: "D",
+    correct: "A",
     icon: document.getElementsByClassName("icon2"),
   },
   {

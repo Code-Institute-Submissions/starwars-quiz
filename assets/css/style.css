@@ -445,6 +445,10 @@ body {
 	font-size: 40px;
 }
 
+#i-symbol {
+    font-size: 50px;
+}
+
 /*---------------Quiz-question-page------------------*/
 
 #quiz {
@@ -871,7 +875,7 @@ body {
 }
 
 .tutorial-content {
-	margin: 4vw 8vw 4vw;
+	margin: 4vw 8vw 4vw !important;
 }
 
 .modal-close {
