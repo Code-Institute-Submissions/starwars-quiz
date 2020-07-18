@@ -259,7 +259,7 @@
 </li>
 </ul>
 <h3><a id="user-content-manual-testing" class="anchor" aria-hidden="true" href="#manual-testing"></a>Manual Testing</h3>
-<p>You can view the testing done in the <a href="https://github.com/lewejuice/starwars-quiz/blob/master/testing.md">test.md</a> where I have written in-depth on the various tests I have performed.</p>
+<p>You can view the testing done in the <a href="https://github.com/lewejuice/starwars-quiz/blob/master/test.md">test.md</a> where I have written in-depth on the various tests I have performed.</p>
 <h2><a id="user-content-deployment" class="anchor" aria-hidden="true" href="#deployment"></a>Deployment</h2>
 <p>I developed this project using <a href="https://www.gitpod.io/" rel="nofollow">Gitpod</a>. Version control was done using git and hosting the repository was done through GitHub.</p>
 <p>The live site was deployed via GitHub Pages and is and stems directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the opening page must be named <code>index.html</code>.</p>
