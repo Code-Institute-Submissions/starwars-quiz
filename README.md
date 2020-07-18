@@ -243,6 +243,9 @@
 <li>
 <p>I want to implement a level system, where the questions get harder each round.</p>
 </li>
+<li>
+<p>I want to implement a restart button so the user doesn't have to go back to the home page every time they want to retry.</p>
+</li>
 </ul>
 <h2><a id="user-content-testing" class="anchor" aria-hidden="true" href="#testing"></a>Testing</h2>
 <h3><a id="user-content-code-validation" class="anchor" aria-hidden="true" href="#code-validation"></a>Code Validation</h3>
@@ -332,7 +335,7 @@
 <h3><a id="user-content-code-credits" class="anchor" aria-hidden="true" href="#code-credits"></a>Code Credits</h3>
 <ol>
 <li>
-<p>The crawling introduction was taken from<a href="https://css-tricks.com/snippets/css/star-wars-crawl-text/" rel="nofollow">css-tricks</a>.</p>
+<p>The crawling introduction was taken from <a href="https://css-tricks.com/snippets/css/star-wars-crawl-text/" rel="nofollow">css-tricks</a>.</p>
 </li>
 <li>
 <p>The moving star background on my homepage was taken from <a href="https://codepen.io/bts/pen/BygMzB" rel="nofollow">codepen</a>.</p>

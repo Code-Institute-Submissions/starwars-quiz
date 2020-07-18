@@ -31,6 +31,8 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
 };
 
+//-------animated-star-background-for-home-page------
+
 var field = document.getElementById("field");
 var f = field.getContext("2d");
 
@@ -124,5 +126,5 @@ function draw() {
     }
 }
 
-// Original timing of the screensaver
+// Original-timing-of-the-screensaver
 setInterval(draw, 40);

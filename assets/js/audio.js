@@ -1,3 +1,5 @@
+// Variables-defined
+
 let audio = {
     gameActive: false,
     soundsOn: true,
@@ -123,12 +125,16 @@ function lightFinishAudio() {
     }
 }
 
+// Function-if-user-gets-top-score
+
 function topScoreLight() {
     stopMusic();
     if (audio.soundsOff === false) {
         audio.bestScoreLight.play();
     }
 }
+
+// Function-if-user-gets-high-score
 
 function goodScoreLight() {
     stopMusic();
@@ -137,12 +143,16 @@ function goodScoreLight() {
     }
 }
 
+// Function-if-user-gets-average-score
+
 function avScoreLight() {
     stopMusic();
     if (audio.soundsOff === false) {
         audio.avScoreLight.play();
     }
 }
+
+// Function-if-user-gets-bad-score
 
 function badScoreLight() {
     stopMusic();
