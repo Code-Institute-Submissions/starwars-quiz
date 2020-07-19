@@ -73,19 +73,19 @@
 <p>I want the landing page to engage me instantly, as this will encourage me to go on further and actually play the game.</p>
 </li>
 <li>
-<p>I want to be able to easily navigate around the site with ease, without needing much instruction.</p>
+<p>Manouvering around the site needs to be made clear and instructive wihtout any confusion.</p>
 </li>
 <li>
-<p>I want to have easy access to the game, instructions if needed, and have control over the audio coming from the site.</p>
+<p>The quiz needs to be accessible and straightforward, with instructions and a mute button if needed.</p>
 </li>
 <li>
-<p>I want to make choices that will effect the game and create a personal outcome, otherwise I will loose interest quickly.</p>
+<p>I want to make the game personal to myself, so it gives me a unique experience.</p>
 </li>
 <li>
-<p>I want to be able to quit the game with ease and choose a different pathway.</p>
+<p>I want to be able to share my score with my friends, and compare.</p>
 </li>
 <li>
-<p>I want to be able to keep track of the amount of questions i've got wrong and right along the way &amp; to document it at the end, engaging me with a title, so it can give me a personal challenge to beat it on any further play-throughs.</p>
+<p>I want to be able to stay updated with my correct and wrong answers during the quiz &amp; also how long I have to answer a question.</p>
 </li>
 <li>
 <p>I want the questions to be randomised so they are not the same as previous games.</p>
