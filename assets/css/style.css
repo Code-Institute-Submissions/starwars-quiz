@@ -917,7 +917,7 @@ body {
 }
 
 .tutorial-content {
-	margin: 4vw 8vw 4vw !important;
+	margin: 4vw 8vw 4vw;
 }
 
 .modal-close {
