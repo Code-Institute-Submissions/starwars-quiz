@@ -700,7 +700,8 @@ body {
   }
 
   #quest-img img {
-    height: 30vh;
+    height: 27vh;
+    padding-top:  1vh;
   }
 
   .quiz-answers {
