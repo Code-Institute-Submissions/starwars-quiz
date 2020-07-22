@@ -317,10 +317,10 @@
 <h3><a id="user-content-music-and-sound-effects" class="anchor" aria-hidden="true" href="#music-and-sound-effects"></a>Music and Sound Effects</h3>
 <ol>
 <li>
-<p>The music playing throughout the quiz question pages are from <a href="https://www.soundboard.com/sb/starwars" rel="nofollow">here</a>.</p>
+<p>The music playing throughout the quiz question pages are from <a href="https://www.soundboard.com/sb/starwars" rel="nofollow">soundboard.com</a>.</p>
 </li>
 <li>
-<p>All sound effects were obtained from <a href="http://www.galaxyfaraway.com/gfa/1998/12/star-wars-sounds-archive/" rel="nofollow">here</a>.</p>
+<p>All sound effects were obtained from <a href="http://www.galaxyfaraway.com/gfa/1998/12/star-wars-sounds-archive/" rel="nofollow">galaxyfaraway.com</a>.</p>
 </li>
 </ol>
 <h3><a id="user-content-images" class="anchor" aria-hidden="true" href="#images"></a>Images</h3>

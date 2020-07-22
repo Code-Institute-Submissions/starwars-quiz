@@ -102,9 +102,14 @@
 </ul>
 </li>
 <li>
-<p>I want to be able to stay updated with my correct and wrong answers during the quiz &amp; also how long I have to answer a question.</p>
+<p>I want to be able to stay updated with my correct and wrong answers during the quiz how long I have to answer a question.</p>
 <ul>
 <li>Throughout the quiz it has star wars style icons, that represent each question, which turn blue or red depending on the right or wrong answer.</li>
+</ul>
+</li>
+<li>
+<p>I want to be able to see how long I have to answer each question.</p>
+<ul>
 <li>A timer counting down from twenty is also clearly shown, which restarts with each question and when the timer ends, it will render the question wrong and move on.</li>
 </ul>
 </li>
@@ -283,9 +288,6 @@
 <p>The physical mobile/tablet devices tested on were a Samsung S20, iPhone 11 pro, and an iPad Air and also the devices included in Chrome Dev tools.</p>
 <ol>
 <li>
-<p>Game Functionality</p>
-<ol>
-<li>
 <p><strong>Answer check function</strong></p>
 <ul>
 <li>
@@ -340,6 +342,44 @@
 </ul>
 </li>
 </ol>
+<h4><a id="responsivness-and-browser-compatibilty" class="anchor" aria-hidden="true" href="#responsivness-and-browser-compatibilty"></a>Responsiveness and Broswer compatibilty</h4>
+<p>Tests were carried out on Desktop, Mobile phone, and tablets. They were also tested on a variety of browsers: Google Chrome, Mozilla Firefox and Safari.</p>
+<p>The physical mobile/tablet devices tested on were a Samsung S20, iPhone 11 pro, and an iPad Air and also the devices included in Chrome Dev tools.</p>
+<ol>
+<li>
+<p><strong>Page Render</strong></p>
+<ul>
+<li>
+<p>On all broswers and devices, pages all rendered correctly, apart from Ipad pro where there seemed to be allot of empty space on the page.</p>
+</li>
+<li>
+<p>To fix this issue, I changed the CSS styling for that specific screen size to enlarge font-sizes and icon sizes to fill more of the screen.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>URL's</strong></p>
+<ul>
+<li>
+<p>I tested to makesure all page URL's worked correctly accross all devices and browsers, which they did.</p>
+</li>
+<li>
+<p>No issues were found</p>
+</li>
+</ul>
+<li>
+<p><strong>Media Files</strong></p>
+<ul>
+<li>
+<p>All media files rendered correctly on all devices and browsers except I found the question image would go over it's boundary on mobile screens.</p>
+<p>Also some larger image files on low signal mobile network, would take an excessive ammount of time to load which caused a large issue for questions that needed the image to answer.</p>
+</li>
+<li>
+<p>To fix the first issue I had to change the image width on smaller screen through CSS. The image load time however was a little more complex as I tried to squash down the image files, where I did loose some quality but still worked well for the sizes and screens I was working with.</p>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 </ol>
 <h3><a id="user-content-additional-testing" class="anchor" aria-hidden="true" href="#additional-testing"></a>Additional Testing</h3>
