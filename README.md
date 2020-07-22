@@ -85,7 +85,10 @@
 <p>I want to be able to share my score with my friends, and compare.</p>
 </li>
 <li>
-<p>I want to be able to stay updated with my correct and wrong answers during the quiz &amp; also how long I have to answer a question.</p>
+<p>I want to be able to stay updated with my correct and wrong answers during the quiz.</p>
+</li>
+<li>
+<p>I want to be able to see how long I have to answer each question.</p>
 </li>
 <li>
 <p>I want the questions to be randomised so they are not the same as previous games.</p>

@@ -31,7 +31,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
 };
 
-//-------animated-star-background-for-home-page------
+//-------animated-star-background-for-home-page-imported-from-codepen.com------
 
 var field = document.getElementById("field");
 var f = field.getContext("2d");
@@ -128,3 +128,5 @@ function draw() {
 
 // Original-timing-of-the-screensaver
 setInterval(draw, 40);
+
+//---End-of-codepen-star-background-------
