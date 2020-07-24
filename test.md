@@ -20,12 +20,6 @@
 <li><a href="#landing-page"><strong>Landing Page</strong></a></li>
 <li><a href="#modals"><strong>Modal</strong></a></li>
 <li><a href="#game-area"><strong>Game Area</strong></a>
-<ul>
-<li><a href="#google-dev-tools---lighthouse-audit"><strong>Google Dev tools</strong></a>
-<ul>
-<li><a href="#desktop-audit-result"><strong>Desktop Audit Result</strong></a></li>
-<li><a href="#mobile-audit-result"><strong>Mobile Audit Result</strong></a></li>
-</ul>
 </li>
 </ul>
 </li>
@@ -39,6 +33,7 @@
 <li><a href="#overview"><strong>Modal Testing</strong></a></li>
 <li><a href="#audio-and-music-testing"><strong>Audio and Music Testing</strong></a></li>
 <li><a href="#game-functionality-testing"><strong>Game Functionality Testing</strong></a></li>
+li><a href="#responsivness-and-browser-compatibilty"><strong>Responsiveness and Broswer compatibilty</strong></a></li>
 </ul>
 </li>
 <li>
@@ -149,14 +144,14 @@
 </ul>
 <ul>
 <li>
-<p>Bug Identified - <strong>Lightsaber Button Glitch</strong></p>
+<p>Bug Identified - Lightsaber Button Glitch</p>
 <li>The animation used for the 'light' and 'dark' buttons had a problem on screens smaller than desktop, where the light saber would travel out of alignment.</li>
 <p>Fix Applied:</p>
 <p>In order to correct this issue I had to remove them on smaller screen sizes, while increasing the button size using the CSS <code>@media (min-width:)</code> which although, did make the smalller screen version a little less interactive, but it was more functional and asthetically pleasing.</li>
 </ul>
 <h5><a id="user-content-modals" class="anchor" aria-hidden="true" href="#modals"></a>Instruction Modal</h5>
 <p>I tested the instruction modal on a variety of screen sizes, and found on a mobile phone, it worked better filling the entire screen, instead of just a pop up.</p>
-<p>Bug Discovered - <strong>A large ammount of blank space at the bottom of the modal on larger screen sizes</strong></p>
+<p>Bug Discovered - A large ammount of blank space at the bottom of the modal on larger screen sizes</p>
 <ul>
 <li>The ammount of space is obvious to user, as the text was small and hard to read and would need to zoom in to see it.</li>
 </ul>
@@ -169,7 +164,6 @@
 <h4><a id="user-content-game-area" class="anchor" aria-hidden="true" href="#game-area"></a>Game Area</h4>
 <p>The quiz area is the main aspect of the game, so I wanted to thoroughly test it, to makesure, no matter what device it is being dislayed on, or which question is being displayed, I wanted it to look and feel exactly as a user would want.</p>
 <br>
-<li>
 <p><strong>Progression Structure</strong></p>
 <ul>
 <li>
@@ -183,7 +177,6 @@
 </li>
 </ul>
 </li>
-<li>
 <p><strong>Exit Function</strong></p>
 <ul>
 <li>
@@ -202,7 +195,7 @@
 <p>The physical mobile/tablet devices tested on were a Samsung S20, iPhone 11 pro, and an iPad Air and also the devices included in Chrome Dev tools.</p>
 <ol>
 <li>
-<p>Audio &amp; Music</p>
+<p><strong>Audio &amp; Music</strong></p>
 <ol>
 <li>
 <p><strong>Clicking Sound Effect Function</strong></p>
