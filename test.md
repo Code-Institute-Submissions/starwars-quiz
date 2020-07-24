@@ -33,7 +33,7 @@
 <li><a href="#overview"><strong>Modal Testing</strong></a></li>
 <li><a href="#audio-and-music-testing"><strong>Audio and Music Testing</strong></a></li>
 <li><a href="#game-functionality-testing"><strong>Game Functionality Testing</strong></a></li>
-li><a href="#responsivness-and-browser-compatibilty"><strong>Responsiveness and Broswer compatibilty</strong></a></li>
+<li><a href="#responsivness-and-browser-compatibilty"><strong>Responsiveness and Broswer compatibilty</strong></a></li>
 </ul>
 </li>
 <li>
